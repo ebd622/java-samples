@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 import java.time.LocalDate;
 
-@Table(name = "person")
+@Table(name = "auto")
 @Entity
 @Getter
 @Setter
