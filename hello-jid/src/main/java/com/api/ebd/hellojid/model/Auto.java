@@ -23,6 +23,5 @@ public class Auto {
     @GeneratedValue
     private int id;
     private String brand;
-    private String type;
-    private LocalDate birthDate;
+    private LocalDate producedDate;
 }
