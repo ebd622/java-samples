@@ -1,7 +1,7 @@
 
 
 
-# Containerise java app with JIB plugin
+# Containerize java app with JIB plugin
 
 
 ### Quick start
