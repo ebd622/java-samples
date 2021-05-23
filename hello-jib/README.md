@@ -38,5 +38,20 @@ Run the command to build and push the image:
 mvn compile jib:build
 ```
 
+## Run the application
+TODO
+
+## End points
+
+Request all items:
+```
+curl http://localhost:8080/auto
+```
+
+Add a new item:
+```
+curl -i -H "Content-Type:application/json" -X POST http://localhost:8080/auto -d '{"brand":"Nissan","producedDate":"2020-01-19"}'
+```
+
 ## Resources
 * Jib: https://github.com/GoogleContainerTools/jib
