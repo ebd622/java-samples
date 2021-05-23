@@ -2,7 +2,7 @@
 
 
 # Containerize java app with JIB plugin
-
+This is a simple example on how to use [Jib](https://github.com/GoogleContainerTools/jib) in your project.
 
 ## Quick start
 
