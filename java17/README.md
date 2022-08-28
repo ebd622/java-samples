@@ -9,6 +9,11 @@ JEPs can be devided into 4 categories:
   * [JEP 406](https://openjdk.org/jeps/406): Pattern Matching for switch (Preview)
   * [JEP 409](https://openjdk.org/jeps/409): Sealed Classes
 * Specific developer stuff
+  * JEP 306
+  * JEP 356
+  * JEP 412
+  * JEP 414
+  * JEP 415
 * Keeping up with Apple stuff
 * Cleaning up stuff
 
