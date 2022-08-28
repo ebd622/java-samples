@@ -1,1 +1,1 @@
-# java-samples
+# Java17 features
