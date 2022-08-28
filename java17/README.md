@@ -6,6 +6,8 @@ Java 17 is a LTS (Long Term Support) version, there are no major updated. It inc
 JEPs can be devided into 4 categories:
 * Nice develope stuff
 * Specific developer stuff
+* Keeping up with Apple stuff
+* Cleaning up stuff
 
 
 ## Resources
