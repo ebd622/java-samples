@@ -5,7 +5,7 @@ The next LTS version (Java 21) should be released in September of 2023.
 
 ## List of JEPS in Java 17
 JEPs can be devided into 4 categories:
-* Nice develope stuff
+* Nice developer stuff
   * [JEP 406](https://openjdk.org/jeps/406): Pattern Matching for switch (Preview)
   * [JEP 409](https://openjdk.org/jeps/409): Sealed Classes
 * Specific developer stuff
