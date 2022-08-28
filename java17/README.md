@@ -1,6 +1,7 @@
 # Java 17 features
 Since Java 10 (March 2018), Java is on a 6 month release cycle. </br>
 Java 17 is a LTS (Long Term Support) version, there are no major updated. It includes 14 JEPs (JDK enhancement proposal).
+The next LTS version (Java 21) should be released in September of 2023.
 
 ## List of JEPS in Java 17
 JEPs can be devided into 4 categories:
