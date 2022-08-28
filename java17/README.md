@@ -5,6 +5,8 @@ Java 17 is a LTS (Long Term Support) version, there are no major updated. It inc
 ## List of JEPS in Java 17
 JEPs can be devided into 4 categories:
 * Nice develope stuff
+  * JEP 406: Pattern Matching for switch (Preview)
+  * JEP 409: Sealed Classes
 * Specific developer stuff
 * Keeping up with Apple stuff
 * Cleaning up stuff
