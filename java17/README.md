@@ -9,7 +9,7 @@ JEPs can be devided into 4 categories:
   * [JEP 406](https://openjdk.org/jeps/406): Pattern Matching for switch (Preview)
   * [JEP 409](https://openjdk.org/jeps/409): Sealed Classes
 * Specific developer stuff
-  * [JEP 306](https://openjdk.org/jeps/306):
+  * [JEP 306](https://openjdk.org/jeps/306): Restore Always-Strict Floating-Point Semantics
   * JEP 356
   * JEP 412
   * JEP 414
