@@ -11,7 +11,7 @@ JEPs can be devided into 4 categories:
 * Specific developer stuff
   * [JEP 306](https://openjdk.org/jeps/306): Restore Always-Strict Floating-Point Semantics
   * [JEP 356](https://openjdk.org/jeps/356): Enhanced Pseudo-Random Number Generators
-  * [JEP 412](https://openjdk.org/jeps/412):
+  * [JEP 412](https://openjdk.org/jeps/412): Foreign Function & Memory API (Incubator)
   * JEP 414
   * JEP 415
 * Keeping up with Apple stuff
