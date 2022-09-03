@@ -18,6 +18,11 @@ JEPs can be devided into 4 categories:
   * JEP 382
   * JEP 391
 * Cleaning up stuff
+  * JEP 398
+  * JEP 403
+  * JEP 407
+  * JEP 410
+  * JEP 411
 
 
 ## Resources
