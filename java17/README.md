@@ -15,7 +15,7 @@ JEPs can be devided into 4 categories:
   * [JEP 414](https://openjdk.org/jeps/414): Vector API (Second Incubator)
   * [JEP 415](https://openjdk.org/jeps/415): Context-Specific Deserialization Filters
 * Keeping up with Apple stuff
-  * JEP 382
+  * [JEP 382](https://openjdk.org/jeps/382)
   * JEP 391
 * Cleaning up stuff
   * JEP 398
