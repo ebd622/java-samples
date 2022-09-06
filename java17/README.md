@@ -16,7 +16,7 @@ JEPs can be devided into 4 categories:
   * [JEP 415](https://openjdk.org/jeps/415): Context-Specific Deserialization Filters
 * Keeping up with Apple stuff
   * [JEP 382](https://openjdk.org/jeps/382): New macOS Rendering Pipeline
-  * [JEP 391](https://openjdk.org/jeps/391)
+  * [JEP 391](https://openjdk.org/jeps/391): macOS/AArch64 Port
 * Cleaning up stuff
   * JEP 398
   * JEP 403
