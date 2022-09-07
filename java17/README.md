@@ -18,7 +18,7 @@ JEPs can be devided into 4 categories:
   * [JEP 382](https://openjdk.org/jeps/382): New macOS Rendering Pipeline
   * [JEP 391](https://openjdk.org/jeps/391): macOS/AArch64 Port
 * Cleaning up stuff
-  * [JEP 398](https://openjdk.org/jeps/398)
+  * [JEP 398](https://openjdk.org/jeps/398): Deprecate the Applet API for Removal
   * JEP 403
   * JEP 407
   * JEP 410
