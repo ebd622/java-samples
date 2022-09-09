@@ -20,7 +20,7 @@ JEPs can be devided into 4 categories:
 * Cleaning up stuff
   * [JEP 398](https://openjdk.org/jeps/398): Deprecate the Applet API for Removal
   * [JEP 403](https://openjdk.org/jeps/403): Strongly Encapsulate JDK Internals
-  * [JEP 407](https://openjdk.org/jeps/407)
+  * [JEP 407](https://openjdk.org/jeps/407): Remove RMI Activation
   * JEP 410
   * JEP 411
 
