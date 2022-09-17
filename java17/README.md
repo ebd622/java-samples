@@ -29,4 +29,4 @@ JEPs can be devided into 4 categories:
 * [Java 17 is here](https://blogs.oracle.com/javamagazine/post/java-jdk-17-generally-available)
 * [All new Java 17 in 5 minutes](https://youtu.be/m2ak1zI-M8g)
 * [Java 17 API specification](https://cr.openjdk.java.net/~iris/se/17/latestSpec//api/index.html)
-* JDK 17
+* JDK 17: https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
