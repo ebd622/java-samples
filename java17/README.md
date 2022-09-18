@@ -25,7 +25,7 @@ JEPs can be devided into 4 categories:
   * [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
 
 ## Install JDK17 (macOS)
-Use sdkman to manage development kits.
+Use [sdkman](https://sdkman.io/) to manage development kits.
 
 curl -s "https://get.sdkman.io" | bash
 
