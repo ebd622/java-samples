@@ -27,7 +27,10 @@ JEPs can be devided into 4 categories:
 ## Install JDK17 (macOS)
 Use [sdkman](https://sdkman.io/) to manage development kits. [Here](https://sdkman.io/usage) are more usage examples.
 
+Install SDK:
+```
 curl -s "https://get.sdkman.io" | bash
+```
 
 sdk list java
 
