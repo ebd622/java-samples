@@ -24,6 +24,10 @@ JEPs can be devided into 4 categories:
   * [JEP 410](https://openjdk.org/jeps/410): AOT and JIT Compiler
   * [JEP 411](https://openjdk.org/jeps/411): Deprecate the Security Manager for Removal
 
+## Install JDK17 (macOS)
+curl -s "https://get.sdkman.io" | bash
+
+
 
 ## Resources
 * [Java 17 is here](https://blogs.oracle.com/javamagazine/post/java-jdk-17-generally-available)
@@ -31,4 +35,3 @@ JEPs can be devided into 4 categories:
 * [Java 17 API specification](https://cr.openjdk.java.net/~iris/se/17/latestSpec//api/index.html)
 * JDK 17: https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 
-## Install JDK17 (macOS)
