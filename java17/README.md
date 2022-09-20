@@ -36,6 +36,8 @@ List all available java SDKs
 sdk list java
 ```
 
+sdk list java | grep installed
+
 sdk install java 17.0.4-oracle
 
 sdk list java | grep installed
