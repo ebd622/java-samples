@@ -35,6 +35,7 @@ List all available java SDKs
 ```
 sdk list java
 ```
+List installed SDKs
 ```
 sdk list java | grep installed
 ```
