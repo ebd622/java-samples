@@ -31,6 +31,7 @@ Install SDK:
 ```
 curl -s "https://get.sdkman.io" | bash
 ```
+List all available java SDKs
 ```
 sdk list java
 ```
