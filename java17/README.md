@@ -39,6 +39,7 @@ List installed SDKs
 ```
 sdk list java | grep installed
 ```
+Install JDK17:
 ```
 sdk install java 17.0.4-oracle
 ```
