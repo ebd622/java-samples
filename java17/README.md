@@ -43,8 +43,9 @@ Install JDK17:
 ```
 sdk install java 17.0.4-oracle
 ```
-
+```
 sdk list java | grep installed
+```
 
 sdk use java 17.0.4-oracle
 
