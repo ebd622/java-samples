@@ -43,6 +43,10 @@ Install JDK17:
 ```
 sdk install java 17.0.4-oracle
 ```
+Check current version
+```
+java -version
+```
 ```
 sdk use java 17.0.4-oracle
 ```
