@@ -50,9 +50,9 @@ java -version
 ```
 sdk use java 17.0.4-oracle
 ```
-
+```
 sdk use java 11.0.2-open
-
+```
 
 
 ## Resources
