@@ -47,6 +47,7 @@ Check current version
 ```
 java -version
 ```
+Make use of a specific version:
 ```
 sdk use java 17.0.4-oracle
 ```
