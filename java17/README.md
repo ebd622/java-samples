@@ -48,6 +48,9 @@ sdk install java 17.0.4-oracle
 ```
 Check current version
 ```
+sdk current
+```
+```
 sdk current java
 ```
 ```
