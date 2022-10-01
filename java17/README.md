@@ -68,6 +68,7 @@ sdk use java 11.0.2-open
 
 ## Resources
 * [Java 17 is here](https://blogs.oracle.com/javamagazine/post/java-jdk-17-generally-available)
+* https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-17
 * [All new Java 17 in 5 minutes](https://youtu.be/m2ak1zI-M8g)
 * [Java 17 API specification](https://cr.openjdk.java.net/~iris/se/17/latestSpec//api/index.html)
 * [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
