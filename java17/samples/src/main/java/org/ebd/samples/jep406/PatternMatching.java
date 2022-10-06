@@ -1,12 +1,16 @@
 package org.ebd.samples.jep406;
 
 public class PatternMatching {
-    public static void main() {
-        Object o = 5;
+    public static void main(String[] args) {
+        patternMach("5");
+        patternMach(5);
+    }
+
+    private static void patternMach(Object o) {
         if (o instanceof String s) {
-            System.out.printf("Object is a string %s", s);
+            System.out.println(String.format("Object is a string %s", s));
         } else if(o instanceof Number n) {
-            System.out.printf("Object is a number %n", n);
+            System.out.println(String.format("Object is a string %d", n));
         }
     }
 }
