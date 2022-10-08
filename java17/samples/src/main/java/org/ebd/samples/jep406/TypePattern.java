@@ -9,7 +9,7 @@ public class TypePattern {
 
     }
 
-    // Option 1
+    // Option 1: using if-else
     static double getDoubleUsingIf(Object o) {
         double result;
         if (o instanceof Integer) {
