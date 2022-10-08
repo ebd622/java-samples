@@ -2,7 +2,11 @@ package org.ebd.samples.jep406;
 
 public class TypePattern {
     public static void main(String[] args) {
-        System.out.println(String.format("Int -> Double: %f", getDoubleUsingIf(5)));
+        //System.out.println(String.format("Int -> Double: %f", getDoubleUsingIf(5)));
+        //System.out.println(String.format("Int -> Double: %f", getDoubleUsingIf(5.0)));
+
+        System.out.println("Int -> Double: " + getDoubleUsingIf(5));
+        System.out.println("Float -> Double: " + getDoubleUsingIf(5.0f));
 
     }
 
