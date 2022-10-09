@@ -7,6 +7,8 @@ public class TypePattern {
         System.out.println(formatter(5d));
         System.out.println(formatter(5l));
         System.out.println(formatter("5"));
+
+        //TODO: exampe with formatterPatternSwitch
     }
 
     // Option 1: using if-else
