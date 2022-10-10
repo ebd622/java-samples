@@ -9,6 +9,7 @@ public class TypePattern {
         System.out.println(formatter("5"));
 
         //TODO: exampe with formatterPatternSwitch
+        System.out.println(formatterPatternSwitch("5"));
     }
 
     // Option 1: using if-else
@@ -26,6 +27,7 @@ public class TypePattern {
         return formatted;
     }
 
+    // Option 2: using switch
     static String formatterPatternSwitch(Object o) {
         return switch (o) {
             case Integer i -> String.format("int %d", i);
