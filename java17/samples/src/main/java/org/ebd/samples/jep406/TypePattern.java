@@ -11,6 +11,7 @@ public class TypePattern {
         //TODO: exampe with formatterPatternSwitch
         System.out.println(formatterPatternSwitch(5));
         System.out.println(formatterPatternSwitch(5d));
+        System.out.println(formatterPatternSwitch(5l));
         System.out.println(formatterPatternSwitch("5"));
     }
 
