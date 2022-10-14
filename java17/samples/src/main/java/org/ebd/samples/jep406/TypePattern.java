@@ -3,6 +3,7 @@ package org.ebd.samples.jep406;
 public class TypePattern {
     public static void main(String[] args) {
 
+        System.out.println("--- Use if-else");
         System.out.println(formatter(5));
         System.out.println(formatter(5d));
         System.out.println(formatter(5l));
