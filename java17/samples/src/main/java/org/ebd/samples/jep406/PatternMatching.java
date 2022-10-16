@@ -14,7 +14,7 @@ public class PatternMatching {
         }
     }
 
-    static void testPatternAndNull_1(String s) {
+    static void testPatternAndNull(String s) {
         switch (s) {
             case null         -> System.out.println("Oops");
             case "Foo", "Bar" -> System.out.println("Great");
@@ -22,7 +22,7 @@ public class PatternMatching {
         }
     }
 
-    static void testStringOrNull(Object o) {
+    static void testPatternAndNull(Object o) {
         switch (o) {
             case null, String s -> System.out.println("String: " + s);
             default             -> System.out.println("Object: " + o);
