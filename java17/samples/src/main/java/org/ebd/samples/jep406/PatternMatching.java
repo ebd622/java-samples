@@ -10,6 +10,7 @@ public class PatternMatching {
         testPatternAndNull_1("test1");
 
         testPatternAndNull_2(null);
+        testPatternAndNull_2("test2");
     }
 
     private static void patternMach(Object o) {
