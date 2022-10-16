@@ -7,6 +7,8 @@ public class PatternMatching {
 
         //Pattern matching and null
         testPatternAndNull_1(null);
+        testPatternAndNull_1("test1");
+
         testPatternAndNull_2(null);
     }
 
