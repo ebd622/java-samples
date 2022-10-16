@@ -8,9 +8,11 @@ public class PatternMatching {
         //Pattern matching and null
         testPatternAndNull_1(null);
         testPatternAndNull_1("test1");
+        testPatternAndNull_1(new Foo());
 
         testPatternAndNull_2(null);
         testPatternAndNull_2("test2");
+
     }
 
     private static void patternMach(Object o) {
@@ -35,4 +37,6 @@ public class PatternMatching {
             default             -> System.out.println("Object: " + o);
         }
     }
+
+    static class Foo{}
 }
