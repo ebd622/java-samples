@@ -4,6 +4,10 @@ public class PatternMatching {
     public static void main(String[] args) {
         patternMach("5");
         patternMach(5);
+
+        //Pattern matching and null
+        testPatternAndNull_1(null);
+        testPatternAndNull_2(null);
     }
 
     private static void patternMach(Object o) {
@@ -14,7 +18,7 @@ public class PatternMatching {
         }
     }
 
-    static void testPatternAndNull(String s) {
+    static void testPatternAndNull_1(String s) {
         switch (s) {
             case null         -> System.out.println("Oops");
             case "Foo", "Bar" -> System.out.println("Great");
@@ -22,7 +26,7 @@ public class PatternMatching {
         }
     }
 
-    static void testPatternAndNull(Object o) {
+    static void testPatternAndNull_2(Object o) {
         switch (o) {
             case null, String s -> System.out.println("String: " + s);
             default             -> System.out.println("Object: " + o);
