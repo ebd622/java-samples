@@ -9,6 +9,7 @@ public class PatternMatching {
         testPatternAndNull_1(null);
         testPatternAndNull_1("test1");
         testPatternAndNull_1("Foo");
+        testPatternAndNull_1("Bar");
 
         testPatternAndNull_2(null);
         testPatternAndNull_2("test2");
