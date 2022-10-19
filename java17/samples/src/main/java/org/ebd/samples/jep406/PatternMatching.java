@@ -5,7 +5,7 @@ public class PatternMatching {
         patternMach("5");
         patternMach(5);
 
-        //Pattern matching and null
+        System.out.println("--- Pattern matching and null");
         testPatternAndNull_1(null);
         testPatternAndNull_1("Foo");
         testPatternAndNull_1("Bar");
