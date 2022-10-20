@@ -5,12 +5,13 @@ public class PatternMatching {
         patternMach("5");
         patternMach(5);
 
-        System.out.println("--- Pattern matching and null");
+        System.out.println("--- Pattern matching and null [1]");
         testPatternAndNull_1(null);
         testPatternAndNull_1("Foo");
         testPatternAndNull_1("Bar");
         testPatternAndNull_1("other");
 
+        System.out.println("--- Pattern matching and null [2]");
         testPatternAndNull_2(null);
         testPatternAndNull_2("test2");
 
