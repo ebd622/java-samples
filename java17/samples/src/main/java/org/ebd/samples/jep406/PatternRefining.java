@@ -4,6 +4,7 @@ public class PatternRefining {
     public static void main(String[] args) {
         testTriangle(new Triangle(5));
         testTriangle(new Triangle(6));
+        testTriangle(new Rectangle());
 
     }
 
