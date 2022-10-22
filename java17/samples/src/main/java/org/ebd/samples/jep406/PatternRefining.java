@@ -2,8 +2,7 @@ package org.ebd.samples.jep406;
 
 public class PatternRefining {
     public static void main(String[] args) {
-        Shape s = new Shape();
-        testTriangle(s);
+        testTriangle(new Shape());
 
     }
 
