@@ -1,6 +1,7 @@
 package org.ebd.samples.jep409;
 
 /**
+ * <p>Sealed Class</p>
  * Only Car and Truck are allowed to extend the class
  */
 public abstract sealed class Vehicle permits Car, Truck {
