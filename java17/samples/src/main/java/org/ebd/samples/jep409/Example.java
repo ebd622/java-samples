@@ -15,11 +15,16 @@ public class Example {
     }
 
     /**
-     * Nissan can extend non-sealed {@link Car} but not {@link Track}
+     * CompanyCar can extend non-sealed {@link Car} but not {@link Track}
      */
-    class Nissan extends Car {
-        public Nissan(int numberOfSeats, String registrationNumber){
+    class CompanyCar extends Car {
+        private final String merk = "Nissan";
+        
+        public CompanyCar(int numberOfSeats, String registrationNumber){
             super(numberOfSeats,registrationNumber);
+        }
+        public String getMerk(){
+            return merk;
         }
     }
 }
