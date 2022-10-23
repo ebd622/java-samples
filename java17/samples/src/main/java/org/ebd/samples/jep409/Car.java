@@ -17,5 +17,4 @@ public non-sealed class Car extends Vehicle implements Service {
     public int getMaxServiceIntervalInMonths() {
         return 12;
     }
-
 }
