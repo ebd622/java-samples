@@ -7,6 +7,7 @@ public class Example {
 
         // Instanciate a sealed class
         Service truck = new Truck(5000, "G-1000-PN");
+        System.out.println("--- Instanciate a sealed class");
         System.out.println( "Track, MaxServiceIntervalInMonths: " + truck.getMaxServiceIntervalInMonths() );
 
         // Instanciate a non-sealed class (which estends a sealed class and implements a sealed interface)
