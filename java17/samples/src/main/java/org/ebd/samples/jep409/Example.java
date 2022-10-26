@@ -15,6 +15,7 @@ public class Example {
         System.out.println( "Car, MaxServiceIntervalInMonths: " + car.getMaxServiceIntervalInMonths() );
 
         Service companyCar = new CompanyCar(1300, "G-319-PB");
+        System.out.println( "companyCar, MaxServiceIntervalInMonths: " + companyCar.getMaxServiceIntervalInMonths() );
     }
 
 }
