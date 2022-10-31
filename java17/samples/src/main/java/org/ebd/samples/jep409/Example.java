@@ -11,9 +11,10 @@ public class Example {
         System.out.println( "Track, MaxServiceIntervalInMonths: " + truck.getMaxServiceIntervalInMonths() );
 
         // Instanciate a non-sealed class (which estends a sealed class and implements a sealed interface)
-        Service car = new Car(1500, "3-TRT-88");
+        Service car = new Car(5, "3-TRT-88");
         System.out.println("--- Instanciate a non-sealed class: Car");
         System.out.println( "Car, MaxServiceIntervalInMonths: " + car.getMaxServiceIntervalInMonths() );
+        System.out.println( "Car, NumberOfSeats: " + ((Car) car).getNumberOfSeats()  );
 
         System.out.println("--- Instanciate a non-sealed class: CompanyCar");
         Service companyCar = new CompanyCar(1300, "G-319-PB");
