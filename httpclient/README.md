@@ -2,4 +2,4 @@
 
 
 # Mutual TLS test
-TODO
+This is a simple client app to test a mTLS connection.
