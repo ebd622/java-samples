@@ -10,17 +10,13 @@
 	</parent>
 	<groupId>com.ebd.demo</groupId>
 	<artifactId>httpclient</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.0</version>
 	<name>httpclient</name>
-	<description>Demo project for Spring Boot</description>
+	<description>TLS Demo project</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
@@ -36,5 +32,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
