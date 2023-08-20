@@ -22,7 +22,7 @@ public class ClientTLS {
     public static void main(String[] args) throws Exception {
         if(args.length < 3){
             System.out.println("No args provided");
-            System.out.println("Usage: java -jar httpclient-0.0.1.jar <truststore.jks> <password> <alias> <https://example.com/path/api> <GET|POST> ");
+            System.out.println("Usage: java -jar tls-client-demo-1.0.0.jar <truststore.jks> <password> <alias> <https://example.com/path/api> <GET|POST> ");
             System.exit(0);
         }
         System.out.println("---> TrustStore: " + args[0]);
@@ -71,7 +71,7 @@ public class ClientTLS {
                 httpRequest = new HttpPost(args[3]);
                 break;
             default:
-                httpRequest = new HttpPost(args[3]);
+                httpRequest = new HttpGet(args[3]);
                 break;
         }
         HttpResponse httpresponse = client.execute(httpRequest);
