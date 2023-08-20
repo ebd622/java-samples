@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ebd.demo</groupId>
-	<artifactId>httpclient</artifactId>
+	<artifactId>tls-client-demo</artifactId>
 	<version>1.0.0</version>
 	<name>httpclient</name>
 	<description>TLS Demo project</description>

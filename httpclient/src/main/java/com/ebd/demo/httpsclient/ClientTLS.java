@@ -1,4 +1,4 @@
-package com.ebd.demo.httpclient;
+package com.ebd.demo.httpsclient;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -12,13 +12,12 @@ import org.apache.http.ssl.PrivateKeyStrategy;
 import org.apache.http.ssl.SSLContexts;
 
 import javax.net.ssl.SSLContext;
-import java.io.File;
 import java.io.FileInputStream;
 import java.net.Socket;
 import java.security.KeyStore;
 import java.util.Map;
 
-public class SSLMutualAuthTest {
+public class ClientTLS {
 
     public static void main(String[] args) throws Exception {
         if(args.length < 3){
