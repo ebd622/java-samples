@@ -3,7 +3,7 @@
 
 # Mutual TLS test
 This is a simple client app to test a mTLS connection, it uses Apache HttpClient.
-Usage: \n
+Usage: </br>
 `
 java -Djdk.tls.client.protocols=TLSv1.2 \ \n
 
