@@ -1,7 +1,7 @@
 
 
 
-# Mutual TLS test
+# Test TLS connection
 This is a simple client app to test a mTLS connection, it uses Apache HttpClient.
 
 Usage: </br>
