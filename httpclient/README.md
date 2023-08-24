@@ -16,4 +16,14 @@ java -Djdk.tls.client.protocols=TLSv1.2 \
 ```
 
 Using highest TLS version available: </br>
+```
+java -Djdk.tls.client.protocols=TLSv1.2 \
+-jar tls-client-demo-1.0.0.jar \
+<store.jks> \
+<password> \
+<alias> \
+<https://example.com/...> \
+<GET | POST>
+```
+
 `java -jar tls-client-demo-1.0.0.jar <store.jks> <password> <alias> <https://example.com/...> <GET | POST>`
