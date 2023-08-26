@@ -5,7 +5,7 @@
 This is a simple client app to test a mTLS connection, it uses Apache HttpClient.
 
 Usage: </br>
-Using highest TLS version available:
+Using default handshaking protocols for TLS clients:
 ```
 java -jar tls-client-demo-1.0.0.jar \
 <store.jks> \
