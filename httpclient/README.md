@@ -14,7 +14,7 @@ java -jar tls-client-demo-1.0.0.jar \
 <https://example.com/...> \
 <GET | POST>
 ```
-
+To enable specific SunJSSE protocols on the client:
 ```
 java -Djdk.tls.client.protocols=TLSv1.2 \
 -jar tls-client-demo-1.0.0.jar \
