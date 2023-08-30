@@ -2,7 +2,7 @@
 
 
 # Test TLS connection
-This is a simple client app to test a mTLS/TLS connection. it uses Apache HttpClient.
+This is a simple client app to test a mTLS/TLS connection. The client uses Apache HttpClient.
 
 Usage: </br>
 Using default handshaking protocols for TLS clients:
