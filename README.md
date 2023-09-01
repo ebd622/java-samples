@@ -1,1 +1,1 @@
-# java-samples
+# Java examples and demos
