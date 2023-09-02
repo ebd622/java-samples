@@ -10,18 +10,30 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.ssl.PrivateKeyDetails;
 import org.apache.http.ssl.PrivateKeyStrategy;
 import org.apache.http.ssl.SSLContexts;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.net.ssl.SSLContext;
 import java.io.FileInputStream;
 import java.net.Socket;
 import java.security.KeyStore;
+import java.util.Arrays;
 import java.util.Map;
 
 @SpringBootApplication
-public class ClientTLS {
+public class ClientTLS implements ApplicationRunner {
+    private static final Logger logger = LoggerFactory.getLogger(ClientTLS.class);
+
 
     public static void main(String[] args) throws Exception {
+        SpringApplication.run(ClientTLS.class, args);
+        System.exit(0);
+
         if(args.length < 3){
             System.out.println("No args provided");
             System.out.println("Usage: java -jar tls-client-demo-1.0.0.jar <truststore.jks> <password> <alias> <https://example.com/path/api> <GET|POST> ");
@@ -81,4 +93,17 @@ public class ClientTLS {
         //printing the status line
         System.out.println(httpresponse.getStatusLine());
     }
+
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        logger.info("Application started with command-line arguments: {}", Arrays.toString(args.getSourceArgs()));
+        logger.info("NonOptionArgs: {}", args.getNonOptionArgs());
+        logger.info("OptionNames: {}", args.getOptionNames());
+
+        for (String name : args.getOptionNames()){
+            logger.info("arg-" + name + "=" + args.getOptionValues(name));
+        }
+
+        boolean containsOption = args.containsOption("person.name");
+        logger.info("Contains person.name: " + containsOption);    }
 }
