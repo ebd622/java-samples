@@ -95,14 +95,45 @@ public class ClientTLS implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) {
+        //--- Check & get args
         log.info("Application started with command-line arguments: {}", Arrays.toString(args.getSourceArgs()));
         log.info("NonOptionArgs: {}", args.getNonOptionArgs());
         log.info("OptionNames: {}", args.getOptionNames());
-        args.getOptionNames().forEach(n -> log.info("Arg: {}={}",n,args.getOptionValues(n)));
+        args.getOptionNames().forEach(name -> log.info("Arg: {}={}",name,args.getOptionValues(name)));
 
-//        for (String name : args.getOptionNames()){
-//            log.info("arg-" + name + "=" + args.getOptionValues(name));
-//        }
-        boolean containsOption = args.containsOption("person.name");
-        log.info("Contains person.name: " + containsOption);    }
+        //Get trustStore
+        if(!args.containsOption("trustStore.name")){
+            log.error("Arg [trustStore.name] is required");
+            System.exit(0);
+        }
+        String trustStore = args.getOptionValues("trustStore.name").get(0);
+
+        //Get password
+        if(!args.containsOption("password")){
+            log.error("Arg [password] is required");
+            System.exit(0);
+        }
+        String pass = args.getOptionValues("password").get(0);
+
+        //Get alias
+        if(!args.containsOption("alias")){
+            log.error("Arg [alias] is required");
+            System.exit(0);
+        }
+        String alias = args.getOptionValues("alias").get(0);
+
+        //Get tls-resource
+        if(!args.containsOption("tls.resource")){
+            log.error("Arg [tls.resource] is required");
+            System.exit(0);
+        }
+        String resource = args.getOptionValues("tls.resource").get(0);
+
+        //Get http-method
+        String method = args.containsOption("http.method") ?
+                args.getOptionValues("http.method").get(0) : "GET";
+
+        //--- Run TLS request
+
+    }
 }
