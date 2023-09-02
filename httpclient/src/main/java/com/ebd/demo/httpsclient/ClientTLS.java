@@ -19,8 +19,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.net.ssl.SSLContext;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.Socket;
+import java.security.KeyManagementException;
 import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.UnrecoverableKeyException;
+import java.security.cert.CertificateException;
 import java.util.Arrays;
 import java.util.Map;
 
@@ -31,70 +38,10 @@ public class ClientTLS implements ApplicationRunner {
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(ClientTLS.class, args);
-        System.exit(0);
-
-        if(args.length < 3){
-            System.out.println("No args provided");
-            System.out.println("Usage: java -jar tls-client-demo-1.0.0.jar <truststore.jks> <password> <alias> <https://example.com/path/api> <GET|POST> ");
-            System.exit(0);
-        }
-        System.out.println("---> TrustStore: " + args[0]);
-        System.out.println("---> pass: " + args[1]);
-        System.out.println("---> alias: " + args[2]);
-        System.out.println("---> URL: " + args[3]);
-        System.out.println("---> HTTP Method: " + args[4]);
-
-        KeyStore identityKeyStore = KeyStore.getInstance("jks");
-        FileInputStream identityKeyStoreFile = new FileInputStream(args[0]);
-
-        identityKeyStore.load(identityKeyStoreFile, args[1].toCharArray());
-        KeyStore trustKeyStore = KeyStore.getInstance("jks");
-
-        FileInputStream trustKeyStoreFile = new FileInputStream(args[0]);
-        trustKeyStore.load(trustKeyStoreFile, args[1].toCharArray());
-
-        SSLContext sslContext = SSLContexts.custom()
-                // load identity keystore
-                .loadKeyMaterial(identityKeyStore, args[1].toCharArray(), new PrivateKeyStrategy() {
-                    @Override
-                    public String chooseAlias(Map<String, PrivateKeyDetails> aliases, Socket socket) {
-                        return args[2];
-                    }
-                })
-                // load trust keystore
-                .loadTrustMaterial(trustKeyStore, null)
-                .build();
-
-        SSLConnectionSocketFactory sslConnectionSocketFactory = new SSLConnectionSocketFactory(
-                sslContext, new String[]{"TLSv1.2", "TLSv1.3"},
-                null,
-                SSLConnectionSocketFactory.getDefaultHostnameVerifier());
-
-        CloseableHttpClient client = HttpClients.custom()
-                .setSSLSocketFactory(sslConnectionSocketFactory)
-                .build();
-
-        // Call a SSL-endpoint
-        HttpUriRequest httpRequest;
-        switch (args[4]) {
-            case "GET":
-                httpRequest = new HttpGet(args[3]);
-                break;
-            case "POST":
-                httpRequest = new HttpPost(args[3]);
-                break;
-            default:
-                httpRequest = new HttpGet(args[3]);
-                break;
-        }
-        HttpResponse httpresponse = client.execute(httpRequest);
-
-        //printing the status line
-        System.out.println(httpresponse.getStatusLine());
     }
 
     @Override
-    public void run(ApplicationArguments args) {
+    public void run(ApplicationArguments args) throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException, UnrecoverableKeyException, KeyManagementException {
         //--- Check & get args
         log.info("Application started with command-line arguments: {}", Arrays.toString(args.getSourceArgs()));
         log.info("NonOptionArgs: {}", args.getNonOptionArgs());
@@ -135,5 +82,35 @@ public class ClientTLS implements ApplicationRunner {
 
         //--- Run TLS request
 
+        KeyStore identityKeyStore = KeyStore.getInstance("jks");
+        FileInputStream identityKeyStoreFile = new FileInputStream(trustStore);
+
+        identityKeyStore.load(identityKeyStoreFile, pass.toCharArray());
+        KeyStore trustKeyStore = KeyStore.getInstance("jks");
+
+        FileInputStream trustKeyStoreFile = new FileInputStream(trustStore);
+        trustKeyStore.load(trustKeyStoreFile, pass.toCharArray());
+
+        SSLContext sslContext = SSLContexts.custom()
+                // load identity keystore
+                .loadKeyMaterial(identityKeyStore, pass.toCharArray(), (aliases, socket) -> alias)
+                // load trust keystore
+                .loadTrustMaterial(trustKeyStore, null)
+                .build();
+
+        SSLConnectionSocketFactory sslConnectionSocketFactory = new SSLConnectionSocketFactory(
+                sslContext, new String[]{"TLSv1.2", "TLSv1.3"},
+                null,
+                SSLConnectionSocketFactory.getDefaultHostnameVerifier());
+
+        CloseableHttpClient client = HttpClients.custom()
+                .setSSLSocketFactory(sslConnectionSocketFactory)
+                .build();
+
+        // Call a SSL-endpoint
+        HttpResponse httpresponse = client.execute(new HttpGet(method));
+
+        //printing the status line
+        log.info("Result: {}", httpresponse.getStatusLine());
     }
 }
