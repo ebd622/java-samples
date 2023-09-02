@@ -10,6 +10,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.ssl.PrivateKeyDetails;
 import org.apache.http.ssl.PrivateKeyStrategy;
 import org.apache.http.ssl.SSLContexts;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.net.ssl.SSLContext;
 import java.io.FileInputStream;
@@ -17,6 +18,7 @@ import java.net.Socket;
 import java.security.KeyStore;
 import java.util.Map;
 
+@SpringBootApplication
 public class ClientTLS {
 
     public static void main(String[] args) throws Exception {
