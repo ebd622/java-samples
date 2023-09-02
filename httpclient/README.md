@@ -24,4 +24,12 @@ java -Djdk.tls.client.protocols=TLSv1.2 \
 <https://example.com/...> \
 <GET | POST>
 ```
+```
+mvn spring-boot:run -Dspring-boot.run.arguments=" \
+--trustStore.name=ttsName.jks \
+--password=pass \
+--alias=aliasName \
+--tls.resource=https://test.resource.com/ \
+--http.method=GET"
+```
 
