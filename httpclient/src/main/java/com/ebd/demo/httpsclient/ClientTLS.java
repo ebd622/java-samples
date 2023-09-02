@@ -12,7 +12,6 @@ import org.apache.http.ssl.PrivateKeyStrategy;
 import org.apache.http.ssl.SSLContexts;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
@@ -27,7 +26,7 @@ import java.util.Map;
 
 @SpringBootApplication
 public class ClientTLS implements ApplicationRunner {
-    private static final Logger logger = LoggerFactory.getLogger(ClientTLS.class);
+    private static final Logger log = LoggerFactory.getLogger(ClientTLS.class);
 
 
     public static void main(String[] args) throws Exception {
@@ -95,15 +94,15 @@ public class ClientTLS implements ApplicationRunner {
     }
 
     @Override
-    public void run(ApplicationArguments args) throws Exception {
-        logger.info("Application started with command-line arguments: {}", Arrays.toString(args.getSourceArgs()));
-        logger.info("NonOptionArgs: {}", args.getNonOptionArgs());
-        logger.info("OptionNames: {}", args.getOptionNames());
+    public void run(ApplicationArguments args) {
+        log.info("Application started with command-line arguments: {}", Arrays.toString(args.getSourceArgs()));
+        log.info("NonOptionArgs: {}", args.getNonOptionArgs());
+        log.info("OptionNames: {}", args.getOptionNames());
+        args.getOptionNames().forEach(n -> log.info("Arg: {}={}",n,args.getOptionValues(n)));
 
-        for (String name : args.getOptionNames()){
-            logger.info("arg-" + name + "=" + args.getOptionValues(name));
-        }
-
+//        for (String name : args.getOptionNames()){
+//            log.info("arg-" + name + "=" + args.getOptionValues(name));
+//        }
         boolean containsOption = args.containsOption("person.name");
-        logger.info("Contains person.name: " + containsOption);    }
+        log.info("Contains person.name: " + containsOption);    }
 }
