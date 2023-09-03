@@ -32,4 +32,11 @@ mvn spring-boot:run -Dspring-boot.run.arguments=" \
 --tls.resource=https://test.resource.com/ \
 --http.method=GET"
 ```
-
+```
+java -jar tls-client-demo-1.0.0.jar \
+--trustStore.name=ttsName.jks \
+--password=pass \
+--alias=aliasName \
+--tls.resource=https://test.resource.com/ \
+--http.method=GET
+```
