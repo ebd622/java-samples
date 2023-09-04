@@ -19,11 +19,11 @@ To enable specific (TLSv1.2) [SunJSSE](https://docs.oracle.com/javase/8/docs/tec
 ```
 java -Djdk.tls.client.protocols=TLSv1.2 \
 -jar tls-client-demo-1.0.0.jar \
-<store.jks> \
-<password> \
-<alias> \
-<https://example.com/...> \
-<GET | POST>
+--trustStore.name=ttsName.jks \
+--password=pass \
+--alias=aliasName \
+--tls.resource=https://test.resource.com/ \
+--http.method=GET
 ```
 ```
 mvn spring-boot:run -Dspring-boot.run.arguments=" \
@@ -32,13 +32,4 @@ mvn spring-boot:run -Dspring-boot.run.arguments=" \
 --alias=aliasName \
 --tls.resource=https://test.resource.com/ \
 --http.method=GET"
-```
-```
-java -Djdk.tls.client.protocols=TLSv1.2 \
--jar tls-client-demo-1.0.0.jar \
---trustStore.name=ttsName.jks \
---password=pass \
---alias=aliasName \
---tls.resource=https://test.resource.com/ \
---http.method=GET
 ```
