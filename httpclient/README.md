@@ -40,3 +40,12 @@ java -jar tls-client-demo-1.0.0.jar \
 --tls.resource=https://test.resource.com/ \
 --http.method=GET
 ```
+```
+java -Djdk.tls.client.protocols=TLSv1.2 \
+-jar tls-client-demo-1.0.0.jar \
+--trustStore.name=ttsName.jks \
+--password=pass \
+--alias=aliasName \
+--tls.resource=https://test.resource.com/ \
+--http.method=GET
+```
