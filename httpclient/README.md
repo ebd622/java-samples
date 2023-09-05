@@ -25,6 +25,7 @@ java -Djdk.tls.client.protocols=TLSv1.2 \
 --tls.resource=https://test.resource.com/ \
 --http.method=GET
 ```
+Create and run jar:
 ```
 mvn spring-boot:run -Dspring-boot.run.arguments=" \
 --trustStore.name=ttsName.jks \
