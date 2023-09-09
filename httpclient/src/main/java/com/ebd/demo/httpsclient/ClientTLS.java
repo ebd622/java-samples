@@ -29,7 +29,7 @@ public class ClientTLS implements ApplicationRunner {
     private static final Logger log = LoggerFactory.getLogger(ClientTLS.class);
 
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         SpringApplication.run(ClientTLS.class, args);
     }
 
@@ -48,6 +48,7 @@ public class ClientTLS implements ApplicationRunner {
         }
         String trustStore = args.getOptionValues("trustStore.name").get(0);
 
+        //--- 1. Get and check input parameters
         //Get password
         if(!args.containsOption("password")){
             log.error("Arg [password] is required");
@@ -73,7 +74,7 @@ public class ClientTLS implements ApplicationRunner {
         String method = args.containsOption("http.method") ?
                 args.getOptionValues("http.method").get(0) : "GET";
 
-        //--- Run TLS request
+        //--- 2. Run TLS request
 
         KeyStore identityKeyStore = KeyStore.getInstance("jks");
         FileInputStream identityKeyStoreFile = new FileInputStream(trustStore);
