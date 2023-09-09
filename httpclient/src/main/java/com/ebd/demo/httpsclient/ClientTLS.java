@@ -75,13 +75,11 @@ public class ClientTLS implements ApplicationRunner {
                 args.getOptionValues("http.method").get(0) : "GET";
 
         //--- 2. Run TLS request
-
         KeyStore identityKeyStore = KeyStore.getInstance("jks");
         FileInputStream identityKeyStoreFile = new FileInputStream(trustStore);
-
         identityKeyStore.load(identityKeyStoreFile, pass.toCharArray());
-        KeyStore trustKeyStore = KeyStore.getInstance("jks");
 
+        KeyStore trustKeyStore = KeyStore.getInstance("jks");
         FileInputStream trustKeyStoreFile = new FileInputStream(trustStore);
         trustKeyStore.load(trustKeyStoreFile, pass.toCharArray());
 
