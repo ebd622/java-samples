@@ -85,6 +85,7 @@ public class ClientTLS implements ApplicationRunner {
         FileInputStream trustKeyStoreFile = new FileInputStream(trustStore);
         trustKeyStore.load(trustKeyStoreFile, pass.toCharArray());
 
+        // 2.3 Create SSLContext 
         SSLContext sslContext = SSLContexts.custom()
                 // load identity keystore
                 .loadKeyMaterial(identityKeyStore, pass.toCharArray(), (aliases, socket) -> alias)
