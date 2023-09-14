@@ -85,7 +85,7 @@ public class ClientTLS implements ApplicationRunner {
         FileInputStream trustKeyStoreFile = new FileInputStream(trustStore);
         trustKeyStore.load(trustKeyStoreFile, pass.toCharArray());
 
-        // 2.3 Create SSLContext 
+        // 2.3 Create SSLContext
         SSLContext sslContext = SSLContexts.custom()
                 // load identity keystore
                 .loadKeyMaterial(identityKeyStore, pass.toCharArray(), (aliases, socket) -> alias)
@@ -93,6 +93,7 @@ public class ClientTLS implements ApplicationRunner {
                 .loadTrustMaterial(trustKeyStore, null)
                 .build();
 
+        // 2.4 Create Factory
         SSLConnectionSocketFactory sslConnectionSocketFactory = new SSLConnectionSocketFactory(
                 sslContext, new String[]{"TLSv1.2", "TLSv1.3"},
                 null,
