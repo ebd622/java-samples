@@ -98,7 +98,7 @@ public class ClientTLS implements ApplicationRunner {
                 sslContext, new String[]{"TLSv1.2", "TLSv1.3"},
                 null,
                 SSLConnectionSocketFactory.getDefaultHostnameVerifier());
-
+        // 2.5 Creare a client
         CloseableHttpClient client = HttpClients.custom()
                 .setSSLSocketFactory(sslConnectionSocketFactory)
                 .build();
