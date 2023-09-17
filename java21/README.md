@@ -9,6 +9,7 @@ TODO
 
 
 ## Resources
+* https://openjdk.org/projects/jdk/21/
 * [Java 17 is here](https://blogs.oracle.com/javamagazine/post/java-jdk-17-generally-available)
 * [Core Java17](https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-17)
 * [All new Java 17 in 5 minutes](https://youtu.be/m2ak1zI-M8g)
