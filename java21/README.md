@@ -10,5 +10,6 @@ TODO
 
 ## Resources
 * [JDK 21](https://openjdk.org/projects/jdk/21/)
+* https://www.oracle.com/nl/java/technologies/downloads/#java21
 
 
