@@ -5,6 +5,7 @@ The next LTS version (Java 25) will be released in ...
 
 ## List of JEPS in Java 21
 TODO
+* JEP430: String Templates (Preview)
 
 
 
