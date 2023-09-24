@@ -7,6 +7,7 @@ The next LTS version (Java 25) will be released in ...
 TODO
 * [JEP 430](https://openjdk.org/jeps/430): String Templates (Preview)
 * [JEP 431](https://openjdk.org/jeps/431): Sequenced Collections
+* [JEP 439]:	Generational ZGC
 
 
 
