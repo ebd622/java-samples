@@ -8,6 +8,7 @@ TODO
 * [JEP 430](https://openjdk.org/jeps/430): String Templates (Preview)
 * [JEP 431](https://openjdk.org/jeps/431): Sequenced Collections
 * [JEP 439](https://openjdk.org/jeps/439): Generational ZGC
+* 440:	Record Patterns
 
 
 
