@@ -9,7 +9,7 @@ TODO
 * [JEP 431](https://openjdk.org/jeps/431): Sequenced Collections
 * [JEP 439](https://openjdk.org/jeps/439): Generational ZGC
 * [JEP 440](https://openjdk.org/jeps/440): Record Patterns
-* 441:	Pattern Matching for switch
+* [JEP 441](https://openjdk.org/jeps/440): Pattern Matching for switch
 
 
 
