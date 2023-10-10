@@ -10,8 +10,8 @@ TODO
 * [JEP 439](https://openjdk.org/jeps/439): Generational ZGC
 * [JEP 440](https://openjdk.org/jeps/440): Record Patterns
 * [JEP 441](https://openjdk.org/jeps/441): Pattern Matching for switch
-* [JEP 442](https://openjdk.org/jeps/442)	Foreign Function & Memory API (Third Preview)
-* 443:	Unnamed Patterns and Variables (Preview)
+* [JEP 442](https://openjdk.org/jeps/442): Foreign Function & Memory API (Third Preview)
+* [JEP 443](https://openjdk.org/jeps/443): Unnamed Patterns and Variables (Preview)
 
 
 
