@@ -12,7 +12,7 @@ TODO
 * [JEP 441](https://openjdk.org/jeps/441): Pattern Matching for switch
 * [JEP 442](https://openjdk.org/jeps/442): Foreign Function & Memory API (Third Preview)
 * [JEP 443](https://openjdk.org/jeps/443): Unnamed Patterns and Variables (Preview)
-* 444:	Virtual Threads
+* [JEP 444](https://openjdk.org/jeps/444): Virtual Threads
 
 
 
