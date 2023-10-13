@@ -13,6 +13,7 @@ TODO
 * [JEP 442](https://openjdk.org/jeps/442): Foreign Function & Memory API (Third Preview)
 * [JEP 443](https://openjdk.org/jeps/443): Unnamed Patterns and Variables (Preview)
 * [JEP 444](https://openjdk.org/jeps/444): Virtual Threads
+* [JEP 445]: Unnamed Classes and Instance Main Methods (Preview)
 
 
 
