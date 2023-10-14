@@ -14,7 +14,7 @@ TODO
 * [JEP 443](https://openjdk.org/jeps/443): Unnamed Patterns and Variables (Preview)
 * [JEP 444](https://openjdk.org/jeps/444): Virtual Threads
 * [JEP 445](https://openjdk.org/jeps/445): Unnamed Classes and Instance Main Methods (Preview)
-* JEP 446: Scoped Values (Preview)
+* [JEP 446](https://openjdk.org/jeps/446): Scoped Values (Preview)
 
 
 
