@@ -18,6 +18,7 @@ TODO
 * [JEP 448](https://openjdk.org/jeps/448): Vector API (Sixth Incubator)
 * [JEP 449](https://openjdk.org/jeps/449): Deprecate the Windows 32-bit x86 Port for Removal
 * [JEP 451](https://openjdk.org/jeps/451): Prepare to Disallow the Dynamic Loading of Agents
+* 452:	Key Encapsulation Mechanism API
 
 ## Resources
 * [JDK 21](https://openjdk.org/projects/jdk/21/)
