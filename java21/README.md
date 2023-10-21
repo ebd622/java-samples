@@ -19,7 +19,7 @@ TODO
 * [JEP 449](https://openjdk.org/jeps/449): Deprecate the Windows 32-bit x86 Port for Removal
 * [JEP 451](https://openjdk.org/jeps/451): Prepare to Disallow the Dynamic Loading of Agents
 * [JEP 452](https://openjdk.org/jeps/452): Key Encapsulation Mechanism API
-453:	Structured Concurrency (Preview)
+* [JEP 453](https://openjdk.org/jeps/453): Structured Concurrency (Preview)
 
 ## Resources
 * [JDK 21](https://openjdk.org/projects/jdk/21/)
