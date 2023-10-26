@@ -4,7 +4,6 @@ Java 21 is a LTS (Long Term Support) version, released on 19 Sepember 2023. Ther
 The next LTS version (Java 25) will be released in ...
 
 ## List of JEPS in Java 21
-TODO
 * [JEP 430](https://openjdk.org/jeps/430): String Templates (Preview)
 * [JEP 431](https://openjdk.org/jeps/431): Sequenced Collections
 * [JEP 439](https://openjdk.org/jeps/439): Generational ZGC
