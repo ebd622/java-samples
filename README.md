@@ -4,6 +4,4 @@
 
 # Usefull references
 * [Maven plugins](https://maven.apache.org/plugins/)
-
-
-[Dependencies](https://mvnrepository.com)
+* [Dependencies](https://mvnrepository.com)
