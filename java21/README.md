@@ -24,5 +24,6 @@ The next LTS version (Java 25) will be released in ...
 * [JDK 21](https://openjdk.org/projects/jdk/21/)
 * [Java21 Oracle](https://www.oracle.com/nl/java/technologies/downloads/#java21)
 * [What's new for developers in JDK 21 ](https://developers.redhat.com/articles/2023/09/21/whats-new-developers-jdk-21#)
+* Java21 (from Devox BE 2023)
 
 
