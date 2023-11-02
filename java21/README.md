@@ -12,7 +12,8 @@ The next LTS version (Java 25) will be released in ...
 * [JEP 445](https://openjdk.org/jeps/445): Unnamed Classes and Instance Main Methods (Preview)
  
 ### Performance and Runtime
-* [JEP 439](https://openjdk.org/jeps/439): Generational ZGC
+* [JEP 439](https://openjdk.org/jeps/439): Generational ZGC ("Z" garbage collector)
+  * Was introduced in JDK15
 * [JEP 444](https://openjdk.org/jeps/444): Virtual Threads
   * Light threads which don't drag around huge thread stack
   * Pay-as-you-go staacks (minimum size 200-300 bytes), stored in the heap
