@@ -12,16 +12,18 @@ The next LTS version (Java 25) will be released in ...
 * [JEP 445](https://openjdk.org/jeps/445): Unnamed Classes and Instance Main Methods (Preview)
  
 ### Performance and Runtime
-
+* [JEP 439](https://openjdk.org/jeps/439): Generational ZGC
+* [JEP 444](https://openjdk.org/jeps/444): Virtual Threads
+  
 ### Libraries
 ### Housekeeping
 
 
 * [JEP 431](https://openjdk.org/jeps/431): Sequenced Collections
-* [JEP 439](https://openjdk.org/jeps/439): Generational ZGC
+
 * [JEP 442](https://openjdk.org/jeps/442): Foreign Function & Memory API (Third Preview)
 
-* [JEP 444](https://openjdk.org/jeps/444): Virtual Threads
+
 
 * [JEP 446](https://openjdk.org/jeps/446): Scoped Values (Preview)
 * [JEP 448](https://openjdk.org/jeps/448): Vector API (Sixth Incubator)
