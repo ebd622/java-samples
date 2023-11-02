@@ -18,7 +18,7 @@ The next LTS version (Java 25) will be released in ...
   * Pay-as-you-go staacks (minimum size 200-300 bytes), stored in the heap
   * Scales to 1M+ concurrent connections on simple hardware (your loaptop)
   * Cheap enough to have a thread for every user request and async task
-  * No need to pool them becasue they are cheap (pooling then in counterproductive)
+  * No need to pool them becasue they are cheap (pooling them in counterproductive)
   
 ### Libraries
 * [JEP 431](https://openjdk.org/jeps/431): Sequenced Collections
