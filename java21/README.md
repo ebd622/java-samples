@@ -16,21 +16,21 @@ The next LTS version (Java 25) will be released in ...
 * [JEP 444](https://openjdk.org/jeps/444): Virtual Threads
   
 ### Libraries
+* [JEP 431](https://openjdk.org/jeps/431): Sequenced Collections
+* [JEP 442](https://openjdk.org/jeps/442): Foreign Function & Memory API (Third Preview)
+* [JEP 446](https://openjdk.org/jeps/446): Scoped Values (Preview)
+* [JEP 448](https://openjdk.org/jeps/448): Vector API (Sixth Incubator)
+* [JEP 452](https://openjdk.org/jeps/452): Key Encapsulation Mechanism API
+* [JEP 453](https://openjdk.org/jeps/453): Structured Concurrency (Preview)
+
 ### Housekeeping
 
 
-* [JEP 431](https://openjdk.org/jeps/431): Sequenced Collections
-
-* [JEP 442](https://openjdk.org/jeps/442): Foreign Function & Memory API (Third Preview)
 
 
 
-* [JEP 446](https://openjdk.org/jeps/446): Scoped Values (Preview)
-* [JEP 448](https://openjdk.org/jeps/448): Vector API (Sixth Incubator)
 * [JEP 449](https://openjdk.org/jeps/449): Deprecate the Windows 32-bit x86 Port for Removal
 * [JEP 451](https://openjdk.org/jeps/451): Prepare to Disallow the Dynamic Loading of Agents
-* [JEP 452](https://openjdk.org/jeps/452): Key Encapsulation Mechanism API
-* [JEP 453](https://openjdk.org/jeps/453): Structured Concurrency (Preview)
 
 ## Resources
 * [JDK 21](https://openjdk.org/projects/jdk/21/)
