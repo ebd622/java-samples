@@ -19,6 +19,7 @@ The next LTS version (Java 25) will be released in ...
   * Scales to 1M+ concurrent connections on simple hardware (your loaptop)
   * Cheap enough to have a thread for every user request and async task
   * No need to pool them becasue they are cheap (pooling them in counterproductive)
+  * Virtual threads transparently souspended/resumed when they block
   
 ### Libraries
 * [JEP 431](https://openjdk.org/jeps/431): Sequenced Collections
