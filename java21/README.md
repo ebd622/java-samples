@@ -24,11 +24,6 @@ The next LTS version (Java 25) will be released in ...
 * [JEP 453](https://openjdk.org/jeps/453): Structured Concurrency (Preview)
 
 ### Housekeeping
-
-
-
-
-
 * [JEP 449](https://openjdk.org/jeps/449): Deprecate the Windows 32-bit x86 Port for Removal
 * [JEP 451](https://openjdk.org/jeps/451): Prepare to Disallow the Dynamic Loading of Agents
 
