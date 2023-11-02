@@ -14,6 +14,8 @@ The next LTS version (Java 25) will be released in ...
 ### Performance and Runtime
 * [JEP 439](https://openjdk.org/jeps/439): Generational ZGC
 * [JEP 444](https://openjdk.org/jeps/444): Virtual Threads
+  * Light threads which don't drag around huge thread stack
+  * 
   
 ### Libraries
 * [JEP 431](https://openjdk.org/jeps/431): Sequenced Collections
