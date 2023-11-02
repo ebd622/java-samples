@@ -5,19 +5,24 @@ The next LTS version (Java 25) will be released in ...
 
 ## JDK 21 features
 ### Language and tooling
+* [JEP 430](https://openjdk.org/jeps/430): String Templates (Preview)
+* [JEP 440](https://openjdk.org/jeps/440): Record Patterns
+* [JEP 441](https://openjdk.org/jeps/441): Pattern Matching for switch
+* [JEP 443](https://openjdk.org/jeps/443): Unnamed Patterns and Variables (Preview)
+* [JEP 445](https://openjdk.org/jeps/445): Unnamed Classes and Instance Main Methods (Preview)
+ 
 ### Performance and Runtime
+
 ### Libraries
 ### Housekeeping
 
-* [JEP 430](https://openjdk.org/jeps/430): String Templates (Preview)
+
 * [JEP 431](https://openjdk.org/jeps/431): Sequenced Collections
 * [JEP 439](https://openjdk.org/jeps/439): Generational ZGC
-* [JEP 440](https://openjdk.org/jeps/440): Record Patterns
-* [JEP 441](https://openjdk.org/jeps/441): Pattern Matching for switch
 * [JEP 442](https://openjdk.org/jeps/442): Foreign Function & Memory API (Third Preview)
-* [JEP 443](https://openjdk.org/jeps/443): Unnamed Patterns and Variables (Preview)
+
 * [JEP 444](https://openjdk.org/jeps/444): Virtual Threads
-* [JEP 445](https://openjdk.org/jeps/445): Unnamed Classes and Instance Main Methods (Preview)
+
 * [JEP 446](https://openjdk.org/jeps/446): Scoped Values (Preview)
 * [JEP 448](https://openjdk.org/jeps/448): Vector API (Sixth Incubator)
 * [JEP 449](https://openjdk.org/jeps/449): Deprecate the Windows 32-bit x86 Port for Removal
