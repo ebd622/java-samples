@@ -3,13 +3,14 @@ package org.ebd.samples21.jep444;
 public class Sample1 {
     public static void doWork() {
         try {
-            Thread.sleep(3000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {}
     }
     public static void main(String[] args) {
-        int MAX=1000;
+        int MAX=10000;
         for(var i=0; i<MAX; i++) {
-            new Thread(Sample1::doWork).start();
+            //new Thread(Sample1::doWork).start();
+            Thread.startVirtualThread(Sample1::doWork);
         }
         try {
             Thread.sleep(3000);
