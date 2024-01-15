@@ -4,7 +4,7 @@ public class Sample1 {
     public static void doWork() {
         try {
             //code...
-            //VT is unmounted from PT
+            //VT is unmounted from PT while sleeping
             Thread.sleep(3000);
             //VT is mounted to PT again
             //code...
