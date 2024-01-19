@@ -11,7 +11,7 @@ public class Sample1 {
         } catch (InterruptedException e) {}
     }
     public static void main(String[] args) {
-        int MAX=1000;
+        int MAX=10000;
         for(var i=0; i<MAX; i++) {
             new Thread(Sample1::doWork).start();
             //Thread.startVirtualThread(Sample1::doWork);
