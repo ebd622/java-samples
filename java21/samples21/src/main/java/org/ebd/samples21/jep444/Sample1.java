@@ -1,5 +1,8 @@
 package org.ebd.samples21.jep444;
 
+/**
+ * This sample shows how to use virtual threads.
+ */
 public class Sample1 {
     public static void doWork() {
         try {
