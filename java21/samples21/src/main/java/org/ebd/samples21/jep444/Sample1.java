@@ -8,7 +8,7 @@ public class Sample1 {
         try {
             //code...
             //VT is unmounted from PT while sleeping
-            Thread.sleep(3000);
+            Thread.sleep(5000);
             //VT is mounted to PT again
             //code...
         } catch (InterruptedException e) {}
@@ -20,7 +20,7 @@ public class Sample1 {
             //Thread.startVirtualThread(Sample1::doWork);
         }
         try {
-            Thread.sleep(3000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
 
         }
