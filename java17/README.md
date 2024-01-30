@@ -66,8 +66,9 @@ sdk use java 11.0.2-open
 ```
 Set default java version (for all new shells):
 
+```
 sdk default java 17.0.4-oracle
-
+```
 
 ## Resources
 * [Java 17 is here](https://blogs.oracle.com/javamagazine/post/java-jdk-17-generally-available)
