@@ -3,6 +3,8 @@ package org.ebd.samples21.jep444;
 public class Sample2 {
     public static void fetch(int index, String path){
         try{
+            System.out.println(index + " before " + Thread.currentThread());
+            
             //TODO
 
         } catch (Exception e){
