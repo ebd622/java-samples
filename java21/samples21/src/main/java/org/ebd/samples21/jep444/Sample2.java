@@ -21,7 +21,6 @@ public class Sample2 {
             var index = i;
             executorService.submit(() -> fetch(index, "Sample2.java"));
         }
-        //TODO
 
     }
 }
