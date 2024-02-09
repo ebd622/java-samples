@@ -2,6 +2,7 @@ package org.ebd.samples21.jep444;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.concurrent.Executors;
 
 public class Sample2 {
     public static void fetch(int index, String path){
@@ -14,6 +15,8 @@ public class Sample2 {
         }
     }
     public static void main(String...arg){
+        var MAX = 10;
+        var executorService = Executors.newFixedThreadPool(MAX);
 
     }
 }
