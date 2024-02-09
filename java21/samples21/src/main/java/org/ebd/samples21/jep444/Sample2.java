@@ -9,8 +9,6 @@ public class Sample2 {
             System.out.println(index + " before " + Thread.currentThread());
             var numberOfLines = Files.lines(Paths.get(path)).count();
             System.out.println(index + " after " + Thread.currentThread() + " " + numberOfLines);
-            //TODO
-
         } catch (Exception e){
             System.out.println(e.getMessage());
         }
