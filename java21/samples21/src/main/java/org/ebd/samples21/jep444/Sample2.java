@@ -17,6 +17,11 @@ public class Sample2 {
     public static void main(String...arg){
         var MAX = 10;
         var executorService = Executors.newFixedThreadPool(MAX);
+        for(int i=0; i<MAX; i++){
+            var index = i;
+            executorService.submit(() -> fetch(index, "Sample2.java"));
+        }
+        //TODO
 
     }
 }
