@@ -19,7 +19,7 @@ public class Sample2 {
         var executorService = Executors.newFixedThreadPool(MAX);
         for(int i=0; i<MAX; i++){
             var index = i;
-            executorService.submit(() -> fetch(index, "Sample2.java"));
+            executorService.submit(() -> fetch(index, "Sample1.java"));
         }
 
     }
