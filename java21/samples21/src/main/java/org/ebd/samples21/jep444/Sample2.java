@@ -21,6 +21,6 @@ public class Sample2 {
             var index = i;
             executorService.submit(() -> fetch(index, "Sample1.java"));
         }
-
+        executorService.shutdown();
     }
 }
