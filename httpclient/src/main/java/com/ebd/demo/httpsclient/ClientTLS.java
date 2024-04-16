@@ -80,7 +80,7 @@ public class ClientTLS implements ApplicationRunner {
         FileInputStream identityKeyStoreFile = new FileInputStream(trustStore);
         identityKeyStore.load(identityKeyStoreFile, pass.toCharArray());
 
-        // 2.2 Create TrustStore
+        // 2.2 Create TrustStore (not required)
         KeyStore trustKeyStore = KeyStore.getInstance("jks");
         FileInputStream trustKeyStoreFile = new FileInputStream(trustStore);
         trustKeyStore.load(trustKeyStoreFile, pass.toCharArray());
