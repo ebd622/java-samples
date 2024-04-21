@@ -57,11 +57,12 @@ public class ClientTLS implements ApplicationRunner {
         String pass = args.getOptionValues("password").get(0);
 
         //Get alias
-        if(!args.containsOption("alias")){
-            log.error("Arg [alias] is required");
-            System.exit(0);
+        String alias = "1";
+        if(args.containsOption("alias")){
+            alias = args.getOptionValues("alias").get(0);
+        } else {
+            log.info("Arg [alias] is not provided. Using default value: {}", alias);
         }
-        String alias = args.getOptionValues("alias").get(0);
 
         //Get tls-resource
         if(!args.containsOption("tls.resource")){
