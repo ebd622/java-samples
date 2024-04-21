@@ -57,7 +57,7 @@ public class ClientTLS implements ApplicationRunner {
         String pass = args.getOptionValues("password").get(0);
 
         //Get alias
-        String alias = "1";
+        String alias="1";
         if(args.containsOption("alias")){
             alias = args.getOptionValues("alias").get(0);
         } else {
@@ -69,7 +69,7 @@ public class ClientTLS implements ApplicationRunner {
             log.error("Arg [tls.resource] is required");
             System.exit(0);
         }
-        String resource = args.getOptionValues("tls.resource").get(0);
+        //String resource = args.getOptionValues("tls.resource").get(0);
 
         //Get http-method
         String method = args.containsOption("http.method") ?
@@ -87,9 +87,10 @@ public class ClientTLS implements ApplicationRunner {
         trustKeyStore.load(trustKeyStoreFile, pass.toCharArray());
 
         // 2.3 Create SSLContext
+        final String finalAlias = alias;
         SSLContext sslContext = SSLContexts.custom()
                 // load identity keystore
-                .loadKeyMaterial(identityKeyStore, pass.toCharArray(), (aliases, socket) -> alias)
+                .loadKeyMaterial(identityKeyStore, pass.toCharArray(), (aliases, socket) -> finalAlias)
                 // load trust keystore
                 .loadTrustMaterial(trustKeyStore, null)
                 .build();
