@@ -3,4 +3,4 @@ JDK25 reaches the next long-term-support version in September 2025 (it will be 3
 TODO
 
 ## Recources
-TODO
+https://openjdk.org/projects/jdk/25/
