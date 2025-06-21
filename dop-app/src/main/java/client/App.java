@@ -10,6 +10,6 @@ public class App {
     public static void main(String[] args) {
         var orderPRocessor = new OrderProcessor();
         orderPRocessor.processOrder(new CreditCard());
-        System.out.println("Hello World!");
+        System.out.println("Order has been successfully processed!");
     }
 }
