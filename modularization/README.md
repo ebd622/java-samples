@@ -2,4 +2,5 @@
 TODO
 
 # Usefull references
-TODO
+* https://youtu.be/DItYExUOPeM?si=xaS_oVbrA-VK7fWK
+* https://youtu.be/X7ZB41Bj0lA?si=-IS9jgKLFmmwhoKL
