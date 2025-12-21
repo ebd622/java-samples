@@ -1,5 +1,7 @@
 # Modularization
-TODO
+List all modules in JRE java that are part of the JDK:
+
+java --list-modules
 
 # Usefull references
 * https://youtu.be/DItYExUOPeM?si=xaS_oVbrA-VK7fWK
