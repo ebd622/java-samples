@@ -1,7 +1,7 @@
 # Modularization
 List all modules in JRE java that are part of the JDK:
 
-java --list-modules
+```java --list-modules```
 
 TODO
 
