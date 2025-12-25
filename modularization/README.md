@@ -9,6 +9,8 @@ Modularization offers multiple benefits, by helping to do the following (1):
 * provide stricter access control
 * create smaller, targeted deployments
 
+### Modularized Java
+The JDK used to ship as one large **rt.jar** file that bundled almost the entire Java runtime, forcing applications to depend on everything even if they only needed a small portion. To better support modern, lightweight, cloud‑native needs, Java developers **modularized the JDK**, splitting it into many smaller modules and removing components unnecessary for most applications. This allows developers to depend only on the modules they need, reducing footprint and improving flexibility
 
 List all modules in JRE java that are part of the JDK:
 
