@@ -34,7 +34,7 @@ Their purpose:
 * Improve security and maintainability
 
 Think of Java modules as:
-✔ part of the Java language and JVM
+✔ part of the Java language and JVM </br>
 ✔ affecting compilation and runtime behavior
 ✔ enabling jlink, jmod, strongly encapsulated JARs
 
