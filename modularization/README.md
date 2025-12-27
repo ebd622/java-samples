@@ -53,6 +53,7 @@ Think of Maven modules as:</br>
 
 #### How they differ
 | Area | Java Module | Maven module |
+| ---- | ----------- | -------------|
 | Area | Java Module | Maven module |
 
 # Usefull references
