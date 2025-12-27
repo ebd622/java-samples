@@ -17,13 +17,28 @@ List all modules in JRE java that are part of the JDK:
 ```
 java --list-modules
 ```
+TODO
+
 ### Java and Maven modules
 Are these the same?
 The answer is NO. Java modules and Maven modules are not the same thing. They solve different problems, operate at different layers, and have different purposes.
 
+#### Java Modules
+Java modules are a language-level and runtime-level construct.
+
+Their purpose:
+* Define strong encapsulation of packages
+* Control what packages are exported
+* Declare dependencies on other Java modules
+* Help build modular JARs
+* Improve security and maintainability
+
+Think of Java modules as:
+✔ part of the Java language and JVM
+✔ affecting compilation and runtime behavior
+✔ enabling jlink, jmod, strongly encapsulated JARs
 
 
-TODO
 
 # Usefull references
 * [Cruising Along with Java](https://pragprog.com/titles/vscajava/cruising-along-with-java/)
