@@ -54,7 +54,11 @@ Think of Maven modules as:</br>
 #### How they differ
 | Area | Java Module | Maven module |
 | --- | --- | --- |
-| Area | Java Module | Maven module |
+| Level | Language/JVM | Build tool |
+| Purpose | Encapsulation + dependency control at runtime | Project organization + build structure |
+| Affects | Compilation, runtime, exports | Only structure of the build |
+| File | module-info.java | pom.xml |
+| Enforced by | Java compiler & JVM | Maven build lifecycle |
 
 # Usefull references
 * [Cruising Along with Java](https://pragprog.com/titles/vscajava/cruising-along-with-java/)
