@@ -19,6 +19,8 @@ java --list-modules
 ```
 ### Java and Maven modules
 Are these the same?
+The answer is NO. Java modules and Maven modules are not the same thing. They solve different problems, operate at different layers, and have different purposes.
+
 
 
 TODO
