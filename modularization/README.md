@@ -33,10 +33,10 @@ Their purpose:
 * Help build modular JARs
 * Improve security and maintainability
 
-Think of Java modules as:
-✔ part of the Java language and JVM </br>
-✔ affecting compilation and runtime behavior
-✔ enabling jlink, jmod, strongly encapsulated JARs
+Think of Java modules as:</br>
+  ✔ part of the Java language and JVM </br>
+  ✔ affecting compilation and runtime behavior</br>
+  ✔ enabling jlink, jmod, strongly encapsulated JARs</br>
 
 
 
