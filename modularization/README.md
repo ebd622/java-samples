@@ -38,6 +38,13 @@ Think of Java modules as:</br>
 ✔ affecting compilation and runtime behavior</br>
 ✔ enabling jlink, jmod, strongly encapsulated JARs</br>
 
+#### Maven Modules
+Maven modules are a **build-organization concept**, not a language feature.</br>
+Their purpose:
+* Organize a project into multiple subprojects
+* Share parent configuration (dependencies, plugins, versions)
+* Build multiple artifacts with one command
+* Improve maintainability of large codebases
 
 
 # Usefull references
