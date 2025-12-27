@@ -17,6 +17,9 @@ List all modules in JRE java that are part of the JDK:
 ```
 java --list-modules
 ```
+### Java and Maven modules
+Are these the same?
+
 
 TODO
 
