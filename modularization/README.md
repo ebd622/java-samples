@@ -52,7 +52,8 @@ Think of Maven modules as:</br>
 ✔ do not affect the JVM, encapsulation, or runtime behavior</br>
 
 #### How they differ
-|Area|Java Module|Maven module
+| Area | Java Module | Maven module |
+| Area | Java Module | Maven module |
 
 # Usefull references
 * [Cruising Along with Java](https://pragprog.com/titles/vscajava/cruising-along-with-java/)
