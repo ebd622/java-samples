@@ -46,6 +46,12 @@ Their purpose:
 * Build multiple artifacts with one command
 * Improve maintainability of large codebases
 
+Think of Maven modules as:</br>
+✔ part of the build tool</br>
+✔ just folders and POMs</br>
+✔ do not affect the JVM, encapsulation, or runtime behavior</br>
+
+
 
 # Usefull references
 * [Cruising Along with Java](https://pragprog.com/titles/vscajava/cruising-along-with-java/)
