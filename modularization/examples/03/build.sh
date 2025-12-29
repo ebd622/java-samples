@@ -9,7 +9,7 @@ mkdir -p output/classes
 javac -d output/classes -classpath output/mlib `find firstAPI -name *.java`
 jar -c -f output/mlib/first.jar -C output/classes .
 
-/bin/rm -rf ouput/classes
+/bin/rm -rf output/classes
 mkdir -p output/classes
 
 # Compile and package the client module (client.jar)
@@ -20,3 +20,8 @@ echo "--- All code running from the classpath belong to the one [unnamed module]
 
 # Run the client application
 java -classpath output/mlib/first.jar:output/mlib/client.jar com.myorg.client.ClientApp
+
+echo ""
+echo "--- All old code running from the modulepath belong to their own automatic moduile ---"
+
+java -p output/mlib -m client/com.myorg.client.ClientApp

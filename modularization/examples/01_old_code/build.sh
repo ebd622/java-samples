@@ -9,7 +9,7 @@ mkdir -p output/classes
 javac -d output/classes -classpath output/mlib `find firstAPI -name *.java`
 jar -c -f output/mlib/first.jar -C output/classes .
 
-/bin/rm -rf ouput/classes
+/bin/rm -rf output/classes
 mkdir -p output/classes
 
 # Compile and package the client module (client.jar)
