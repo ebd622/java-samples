@@ -22,6 +22,7 @@ echo "--- All code running from the classpath belong to the one [unnamed module]
 java -classpath output/mlib/first.jar:output/mlib/client.jar com.myorg.client.ClientApp
 
 echo ""
-echo "--- All old code running from the modulepath belong to their own automatic moduile ---"
-
+echo "--- All old code running from the modulepath belong to their own automatic module ---"
+## -p output/mlib: Sets the module path to the output/mlib directory, where modular JARs are located.
+## -m client/com.myorg.client.ClientApp: Runs the main class com.myorg.client.ClientApp from the client module.
 java -p output/mlib -m client/com.myorg.client.ClientApp
