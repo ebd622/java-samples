@@ -10,4 +10,3 @@ class ClientApp {
     System.out.println(new FirstApi().getInfo());
   }
 }
-

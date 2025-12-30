@@ -17,5 +17,5 @@ javac -d output/classes -p output/mlib `find client -name *.java`
 jar -c -f output/mlib/client.jar -C output/classes .
 
 ## -p output/mlib: Sets the module path to the output/mlib directory, where modular JARs are located.
-## -m client/com.myorg.client.ClientApp: Runs the main class com.myorg.client.ClientApp from the client module.
-java -p output/mlib -m com.myorg.theClient/com.myorg.theClient.ClientApp
+## -m com.myorg.theClient/com.myorg.theClient.ClientApp
+java -p output/mlib -m com.myorg.theClient/com.myorg.client.ClientApp
