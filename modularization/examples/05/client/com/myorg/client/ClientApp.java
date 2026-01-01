@@ -1,6 +1,7 @@
 package com.myorg.client;
 
-import com.myorg.first.FirstApi;
+//import com.myorg.first.FirstApi;
+import module com.myorg.theFirstAPI;
 
 class ClientApp {
   public String getInfo() { return "This is ClientApp, it is a part of " + ClientApp.class.getModule(); }
