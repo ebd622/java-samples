@@ -1,2 +1,2 @@
-# Fail fast
+# Hidden vs Exposed
 TODO
