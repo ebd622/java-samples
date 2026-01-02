@@ -13,6 +13,9 @@ class ClientApp {
     System.out.println(new ClientApp().getInfo());
     System.out.println(new FirstApi().getInfo());
 
+//    Helper h = new HelperImpl(); //Error: Cannot access com.myorg.impl.HelperImpl
+//    System.out.println(h);
+
     //--- Accessing Helper class and its methods
     Helper helper = new FirstApi().getHelper();
     System.out.println(helper);
@@ -22,6 +25,5 @@ class ClientApp {
     Method method = helper.getClass().getMethod("secret");
     System.out.println(method);
     System.out.println(method.invoke(helper)); //Error:  Java says "I'm watching you"
-
   }
 }
