@@ -4,7 +4,7 @@ import com.myorg.first.FirstApi;
 import com.myorg.first.Helper;
 import java.lang.reflect.Method;
 
-//import com.myorg.impl.HelperImpl; //Error: Cannot access com.myorg.impl.HelperImpl
+//import com.myorg.impl.HelperImpl; //ERROR at compile time even though it is available now for runtime
 
 class ClientApp {
   public String getInfo() { return "This is ClientApp, it is a part of " + ClientApp.class.getModule(); }
