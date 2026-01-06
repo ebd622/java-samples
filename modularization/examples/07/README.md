@@ -1,2 +1,2 @@
-# Ppening for runtime while closing for compile time dependencies
+# Opening for runtime while closing for compile time dependencies
 TODO
