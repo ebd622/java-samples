@@ -1,2 +1,2 @@
-# Hidden vs Exposed
+# Ppening for runtime while closing for compile time dependencies
 TODO
