@@ -22,3 +22,14 @@
     ```
     * So, implementation details are hidden from other modules, enforcing strong encapsulation.
     * This encapsulation helps maintain a clear separation between the public API (interface) and internal implementation, improving modular
+* Check metadata of `theFirstAPI` module:
+    ```
+    jar -f output/mlib/first.jar -d
+    ```
+    * Output:
+    ```
+    com.myorg.theFirstAPI jar:file:.../java-samples/modularization/examples/07/output/mlib/first.jar!/module-info.class
+    exports com.myorg.first
+    requires java.base mandated
+    contains com.myorg.impl
+    ```
