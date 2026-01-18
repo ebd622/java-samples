@@ -24,4 +24,4 @@
   contains com.myorg.client
   ```
   
-TODO
+* So, with java modules we can get metadata about the modules and their dependencies, using native feature of java.
