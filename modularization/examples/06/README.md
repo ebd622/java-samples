@@ -14,3 +14,11 @@
     }
     ```
   * Class `ClientApp` in Module `theClient` can access public types in package `com.myorg.first`, but cannot access types in package `com.myorg.impl`
+  * We cannot use `.myorg.impl.HelperImpl` in `ClientApp`, because it is in a non-exported package:
+    ```java
+    // This will cause a compile-time error
+    import com.myorg.impl.HelperImpl; 
+    HelperImpl helperImpl = new HelperImpl(); // Error: HelperImpl is not accessible
+    ```
+    * So, implementation details are hidden from other modules, enforcing strong encapsulation.
+    * This encapsulation helps maintain a clear separation between the public API (interface) and internal implementation, improving modular
