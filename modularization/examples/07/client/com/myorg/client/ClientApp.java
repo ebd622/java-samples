@@ -16,14 +16,14 @@ class ClientApp {
 //    Helper h = new HelperImpl(); //Error: Cannot access com.myorg.impl.HelperImpl
 //    System.out.println(h);
 
-    //--- Accessing Helper class and its methods
+    System.out.println("---Accessing Helper class and its methods");
     Helper helper = new FirstApi().getHelper();
     System.out.println(helper);
     System.out.println(helper.greet()); //works fine
 
-    // --- Accessing secret() method via reflection
+    System.out.println("---Accessing secret() method via reflection");
     Method method = helper.getClass().getMethod("secret");
     System.out.println(method);
-    System.out.println(method.invoke(helper)); //Error:  Java says "I'm watching you"
+    System.out.println(method.invoke(helper)); //Not it is allowed at runtime because the package "com.myorg.impl" is opened
   }
 }
