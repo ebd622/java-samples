@@ -1,6 +1,6 @@
 # Opening for runtime while closing for compile time dependencies
 
-* Module `theFirstAPI` exposes its package `com.myorg.first`, and opens `com.myorg.impl`
+* Module `theFirstAPI` **exports** its package `com.myorg.first`, and opens `com.myorg.impl`
     ```
     module com.myorg.theFirstAPI {
         exports com.myorg.first;
