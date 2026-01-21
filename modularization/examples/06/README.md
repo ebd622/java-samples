@@ -14,7 +14,7 @@
     }
     ```
   * Class `ClientApp` in Module `theClient` can access public types in package `com.myorg.first`, but cannot access types in package `com.myorg.impl`
-  * We cannot use `.myorg.impl.HelperImpl` in `ClientApp`, because it is in a non-exported package:
+  * We cannot use `com.myorg.impl.HelperImpl` in `ClientApp`, because it is in a non-exported package:
     ```java
     // This will cause a compile-time error
     import com.myorg.impl.HelperImpl; 
