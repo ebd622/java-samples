@@ -1,6 +1,6 @@
 # Hidden vs Exposed
 
-* Module `theFirstAPI` exposes its package `com.myorg.first`, but does not expose `com.myorg.impl`
+* Module `theFirstAPI` **exposes** its package `com.myorg.first`, but does not expose `com.myorg.impl`
     ```
     module com.myorg.theFirstAPI {
         exports com.myorg.first;
