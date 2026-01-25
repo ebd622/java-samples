@@ -17,7 +17,10 @@ List all modules in JRE java that are part of the JDK:
 ```
 java --list-modules
 ```
-TODO
+Get details on a specific module, for example java.base:
+```
+java --describe-module java.base
+```
 
 ### Java and Maven modules
 Are these the same?
