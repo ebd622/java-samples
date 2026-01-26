@@ -1,14 +1,15 @@
 @startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 !define RECTANGLE class
 !define INTERFACE interface
 
-package "theClient" {
+rectangle "module theClient" as theClientModule {
     package "com.myorg.client" {
         RECTANGLE ClientApp
     }
 }
 
-package "theFirstAPI" {
+rectangle "module theFirstAPI" as theFirstApiModule {
     package "com.myorg.first" {
         RECTANGLE FirstAPI
         INTERFACE Helper
