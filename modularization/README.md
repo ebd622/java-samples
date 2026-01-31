@@ -17,7 +17,7 @@ List all modules in JRE java that are part of the JDK:
 ```
 java --list-modules
 ```
-Get details on a specific module, for example java.base:
+Get details on a specific module, for example the module `java.base`:
 ```
 java --describe-module java.base
 ```
