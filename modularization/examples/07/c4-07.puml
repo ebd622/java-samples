@@ -18,6 +18,12 @@ rectangle "module theFirstAPI" as theFirstApiModule {
         RECTANGLE HelperImpl
     }
 }
+    note right of first
+      exports com.myorg.first
+    end note
+    note top of impl
+      opens com.myorg.impl
+    end note
 
 ClientApp --> FirstAPI : calls
 ClientApp --> HelperImpl : uses
