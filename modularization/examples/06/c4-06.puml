@@ -1,0 +1,43 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!define RECTANGLE class
+!define INTERFACE interface
+
+' Use straight lines for all connections
+skinparam linetype ortho
+
+rectangle "module theClient" as theClientModule {
+    package "com.myorg.client" as client{
+        RECTANGLE ClientApp
+    }
+}
+
+rectangle "module theFirstAPI" as theFirstApiModule {
+    package "com.myorg.first" as first {
+        RECTANGLE FirstAPI
+        INTERFACE Helper
+    }
+    package "com.myorg.impl" as impl {
+        RECTANGLE HelperImpl
+    }
+}
+
+' Indicate module dependency
+' Use a dashed arrow to show that theClient requires theFirstAPI
+
+theClientModule ..> theFirstApiModule : requires
+
+note right of first
+  exports com.myorg.first
+end note
+note top of impl
+  opens com.myorg.impl
+end note
+
+ClientApp --> FirstAPI : calls
+ClientApp --> HelperImpl : uses
+HelperImpl ..|> Helper : implements
+
+' Add free text at the bottom of the diagram
+footer Text at the bottom of the diagram
+@enduml
