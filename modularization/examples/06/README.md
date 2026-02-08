@@ -6,7 +6,7 @@
         exports com.myorg.first;
     }
     ```
-  Package `com.myorg.impl` is hidden from other modules.
+  Package `com.myorg.impl` is **hidden** from other modules.
 * Module `theClient` requires Module `theFirstAPI`
     ```
     module com.myorg.theClient {
