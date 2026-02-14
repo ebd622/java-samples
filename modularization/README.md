@@ -63,7 +63,9 @@ Think of Maven modules as:</br>
 | File | module-info.java | pom.xml |
 | Enforced by | Java compiler & JVM | Maven build lifecycle |
 
-### module-info.java
+### The module descriptor
+module-info.java is called module descriptor or module declaration. 
+It may 
 #### Module declaration
 * module – defines a named module
 * open module – defines an open module (all packages are open for deep reflection)
@@ -87,7 +89,7 @@ Think of Maven modules as:</br>
 #### Internal Access
 permits (rare in modules; normally for sealed classes, but allowed if module-info declares sealed constructs inside)
 
-#### Full list of kewords
+#### Full list module directives
 ```
 module
 open module
