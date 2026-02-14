@@ -63,6 +63,10 @@ Think of Maven modules as:</br>
 | File | module-info.java | pom.xml |
 | Enforced by | Java compiler & JVM | Maven build lifecycle |
 
+#### module-info.java
+## Module declaration
+* mosule - defines a named module
+
 # Usefull references
 * [Cruising Along with Java](https://pragprog.com/titles/vscajava/cruising-along-with-java/)
 * [ Java Modules: Why and How](https://youtu.be/DItYExUOPeM?si=xaS_oVbrA-VK7fWK)
