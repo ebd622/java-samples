@@ -108,3 +108,4 @@ provides ... with
 * [Cruising Along with Java](https://pragprog.com/titles/vscajava/cruising-along-with-java/)
 * [ Java Modules: Why and How](https://youtu.be/DItYExUOPeM?si=xaS_oVbrA-VK7fWK)
 * [Java 9 Modules: Why and How](https://youtu.be/X7ZB41Bj0lA?si=-IS9jgKLFmmwhoKL)
+* https://youtu.be/3UCBmdbeYm4?si=_8xeMwPgDZPoen5k
