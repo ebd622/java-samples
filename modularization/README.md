@@ -68,10 +68,17 @@ Think of Maven modules as:</br>
 * module – defines a named module
 * open module – defines an open module (all packages are open for deep reflection)
 
-### Dependencies
+#### Dependencies
 * requires – declares a dependency on another module
 * requires transitive – re-exports the dependency to downstream modules
 * requires static – dependency needed at compile‑time but optional at run‑time
+
+#### Exports and Opens
+* exports – makes a package accessible to other modules
+* **exports … to** – exports a package only to specific modules (qualified export)
+* opens – opens a package for deep reflection (e.g., to frameworks like Jackson / Hibernate)
+* **opens … to** – opens a package only to specific modules (qualified opens)
+
 
 # Usefull references
 * [Cruising Along with Java](https://pragprog.com/titles/vscajava/cruising-along-with-java/)
