@@ -65,9 +65,13 @@ Think of Maven modules as:</br>
 
 ### module-info.java
 #### Module declaration
-* mosule - defines a named module
+* module – defines a named module
+* open module – defines an open module (all packages are open for deep reflection)
 
-#### Dependencies
+### Dependencies
+* requires – declares a dependency on another module
+* requires transitive – re-exports the dependency to downstream modules
+* requires static – dependency needed at compile‑time but optional at run‑time
 
 # Usefull references
 * [Cruising Along with Java](https://pragprog.com/titles/vscajava/cruising-along-with-java/)
