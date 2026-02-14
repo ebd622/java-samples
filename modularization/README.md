@@ -84,6 +84,8 @@ Think of Maven modules as:</br>
 * uses – declares dependence on a service (consumer)
 * provides … with – registers a service implementation (provider)
 
+#### Internal Access
+permits (rare in modules; normally for sealed classes, but allowed if module-info declares sealed constructs inside)
 
 # Usefull references
 * [Cruising Along with Java](https://pragprog.com/titles/vscajava/cruising-along-with-java/)
