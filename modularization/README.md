@@ -87,6 +87,21 @@ Think of Maven modules as:</br>
 #### Internal Access
 permits (rare in modules; normally for sealed classes, but allowed if module-info declares sealed constructs inside)
 
+#### Full list of kewords
+```
+module
+open module
+requires
+requires transitive
+requires static
+exports
+exports ... to
+opens
+opens ... to
+uses
+provides ... with
+```
+
 # Usefull references
 * [Cruising Along with Java](https://pragprog.com/titles/vscajava/cruising-along-with-java/)
 * [ Java Modules: Why and How](https://youtu.be/DItYExUOPeM?si=xaS_oVbrA-VK7fWK)
