@@ -1,6 +1,7 @@
 # Modularization
 ### History
 * Java Modules came out of project [Jigsaw](https://openjdk.org/projects/jigsaw/) which has four big overaching goals.
+* These goals were primarily implemented througt [JEP 200](https://openjdk.org/jeps/200) and [JEP 261](https://openjdk.org/jeps/261)
 
 ### Benefits of Modularization
 Modularization offers multiple benefits, by helping to do the following (1):
