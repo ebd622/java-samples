@@ -77,7 +77,12 @@ Think of Maven modules as:</br>
 * exports – makes a package accessible to other modules
 * **exports … to** – exports a package only to specific modules (qualified export)
 * opens – opens a package for deep reflection (e.g., to frameworks like Jackson / Hibernate)
+* open – opens all packages for reflection
 * **opens … to** – opens a package only to specific modules (qualified opens)
+
+#### Service Use and Implementation
+* uses – declares dependence on a service (consumer)
+* provides … with – registers a service implementation (provider)
 
 
 # Usefull references
