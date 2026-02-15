@@ -39,3 +39,12 @@
       ```
       custom-image/bin/java -p output/mlib -m com.myorg.theClient/com.myorg.client.ClientApp 
       ```
+* Run application to get some details of runtime performance:
+  * Using JDK java image:
+      ```
+      /usr/bin/time -l java -p output/mlib -m com.myorg.theClient/com.myorg.client.ClientApp
+      ```
+  * Using Custom java image:
+      ```
+      /usr/bin/time -l custom-image/bin/java -p output/mlib -m com.myorg.theClient/com.myorg.client.ClientApp 
+      ```
