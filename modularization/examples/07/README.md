@@ -44,6 +44,35 @@
       ```
       /usr/bin/time -l java -p output/mlib -m com.myorg.theClient/com.myorg.client.ClientApp
       ```
+    
+      ```
+    This is ClientApp, it is a part of module com.myorg.theClient
+    This is FirstApi, it is a part of module com.myorg.theFirstAPI
+    ---Accessing Helper class and its methods
+    com.myorg.impl.HelperImpl@65b54208
+    Hello from HelperImpl
+    ---Accessing secret() method via reflection
+    public java.lang.String com.myorg.impl.HelperImpl.secret()
+    se...t
+    0.30 real         0.07 user         0.02 sys
+    47955968  maximum resident set size
+    0  average shared memory size
+    0  average unshared data size
+    0  average unshared stack size
+    3827  page reclaims
+    238  page faults
+    0  swaps
+    0  block input operations
+    0  block output operations
+    0  messages sent
+    0  messages received
+    0  signals received
+    4  voluntary context switches
+    449  involuntary context switches
+    476369128  instructions retired
+    225790024  cycles elapsed
+    27362096  peak memory footprint 
+      ```
   * Using Custom java image:
       ```
       /usr/bin/time -l custom-image/bin/java -p output/mlib -m com.myorg.theClient/com.myorg.client.ClientApp 
