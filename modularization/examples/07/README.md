@@ -20,3 +20,22 @@
     requires java.base mandated
     opens com.myorg.impl
     ```
+## Build custom java image with jlink
+* List modules
+  * JDK java image: 
+    ```
+    java --list-modules
+    ```
+  * Custom java image:
+    ```
+    ./custom-image/bin/java --list-modules
+    ```
+* Run application (functionally there is no differences between JDK java image and custom java image):
+  * Using JDK java image: 
+      ```
+      java -p output/mlib -m com.myorg.theClient/com.myorg.client.ClientApp
+      ```
+  * Using Custom java image:
+      ```
+      custom-image/bin/java -p output/mlib -m com.myorg.theClient/com.myorg.client.ClientApp 
+      ```
