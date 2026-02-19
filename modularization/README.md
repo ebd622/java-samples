@@ -68,8 +68,8 @@ Think of Maven modules as:</br>
 | Enforced by | Java compiler & JVM | Maven build lifecycle |
 
 ### The module descriptor
-module-info.java is called module descriptor or module declaration. 
-It may have different directives, here are the full list.
+File **module-info.java** is called module descriptor or module declaration. 
+It may have different **directives**, here are the full list.
 #### Module declaration
 * module – defines a named module
 * open module – defines an open module (all packages are open for deep reflection)
