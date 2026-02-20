@@ -80,7 +80,7 @@ It may have different **directives**, here are the full list.
 * requires static – dependency needed at compile‑time but optional at run‑time
 
 #### Exports and Opens
-* exports – makes a package accessible to other modules
+* **exports** – makes a package accessible to other modules
 * **exports … to** – exports a package only to specific modules (qualified export)
 * opens – opens a package for deep reflection (e.g., to frameworks like Jackson / Hibernate)
 * open – opens all packages for reflection
