@@ -23,5 +23,8 @@
   requires java.base mandated
   contains com.myorg.client
   ```
+  * `client` is the name of the module, automatically derived from the JAR file name (client.jar).
+  * It requires the java.base module, which is mandatory for all modules.
+  * The keyword `mandated` `indicates that this requirement is added by the system **automatically**, even if you don’t declare it.
   
 * So, with java modules we can get metadata about the modules and their dependencies, using native feature of java.
