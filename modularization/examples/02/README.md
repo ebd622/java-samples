@@ -7,11 +7,5 @@
   This is ClientApp, it is a part of unnamed module @4fcb38dd
   This is FirstApi, it is a part of unnamed module @4fcb38dd
   ```
-
-* Get details on unnamed (automatic) module:
-  ```
-  jar -f output/mlib/client.jar -d
-  ```
-  ```
-  jar -f output/mlib/first.jar -d
-  ```
+## Summary
+* When you run your code from the `classpath`, all jars belong to the single `unnamed module`

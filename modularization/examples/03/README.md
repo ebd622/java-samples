@@ -28,3 +28,8 @@
   * The keyword `mandated` `indicates that this requirement is added by the system **automatically**, even if you don’t declare it.
   
 * So, with java modules we can get metadata about the modules and their dependencies, using native feature of java.
+
+### Summary
+* `Unnamed module` is not the same as `automatic module`.
+* `Automatic modules` happen when you put a non-modular JAR on the module path. The module system derives the module name from the JAR filename.
+* On the classpath, there is no derived name. It’s just part of the unnamed module.
