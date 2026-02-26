@@ -8,8 +8,9 @@ classes directly from the JARs listed in the classpath.
   
   If a required module is missing, we get a fast fail: java.lang.module.FindException during boot layer initialization, and the application does not start.
 
-
-TODO
 ## Summary:
 * Classpath: Error occurs later, when the missing class is actually used (ClassNotFoundException).
 * Module path: Error occurs immediately, `before the application starts` (FindException), because the module system enforces dependencies strictly at startup.
+* With Module path:
+  * The application fails fast if a required module is missing, preventing runtime errors and unpredictable behavior.
+  * The module path provides stronger dependency management and early error detection, making your application safer and easier to troubleshoot.
