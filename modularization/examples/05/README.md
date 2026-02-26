@@ -4,7 +4,7 @@
 classes directly from the JARs listed in the classpath. 
   
   If a required class is missing, you get a ClassNotFoundException or NoClassDefFoundError `at runtime after the application starts`.
-* When running the application the `module path`, Java’s module system checks for all required modules `before starting`.
+* When running the application with the `module path`, Java’s module system checks for all required modules `before starting`.
   
   If a required module is missing, we get a fast fail: java.lang.module.FindException during boot layer initialization, and the application does not start.
 
