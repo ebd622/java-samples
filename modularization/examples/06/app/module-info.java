@@ -1,3 +1,3 @@
-module com.myorg.theClient {
+module com.myorg.theApp {
     requires com.myorg.theFirstAPI;
 }

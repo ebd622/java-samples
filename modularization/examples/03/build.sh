@@ -1,4 +1,3 @@
-
 /bin/rm -rf output
 
 # Create output directories
@@ -12,17 +11,17 @@ jar -c -f output/mlib/first.jar -C output/classes .
 /bin/rm -rf output/classes
 mkdir -p output/classes
 
-# Compile and package the client module (client.jar)+
-javac -d output/classes -classpath output/mlib/first.jar `find client -name \*.java`
-jar -c -f output/mlib/client.jar -C output/classes .
+# Compile and package the app module (app.jar)
+javac -d output/classes -classpath output/mlib/first.jar `find app -name \*.java`
+jar -c -f output/mlib/app.jar -C output/classes .
 
 echo "--- Code running from the classpath belong to the one [unnamed module] ---"
 
-# Run the client application
-java -classpath output/mlib/first.jar:output/mlib/client.jar com.myorg.client.ClientApp
+# Run the app application
+java -classpath output/mlib/first.jar:output/mlib/app.jar com.myorg.app.Application
 
 echo ""
 echo "--- The same code running from the modulepath belong to their own automatic module ---"
 ## -p output/mlib: Sets the module path to the output/mlib directory, where modular JARs are located.
-## -m client/com.myorg.client.ClientApp: Runs the main class com.myorg.client.ClientApp from the client module.
-java -p output/mlib -m client/com.myorg.client.ClientApp
+## -m app/com.myorg.app.Application: Runs the main class com.myorg.app.Application from the app module.
+java -p output/mlib -m app/com.myorg.app.Application
