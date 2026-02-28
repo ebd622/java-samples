@@ -15,5 +15,5 @@ mkdir -p output/classes
 javac -d output/classes -classpath output/mlib/client.jar `find app -name \*.java`
 jar -c -f output/mlib/app.jar -C output/classes .
 
-# Run the app application
+# Run the application
 java -classpath output/mlib/client.jar:output/mlib/app.jar com.myorg.app.Application
