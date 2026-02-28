@@ -1,7 +1,7 @@
 package com.myorg.app;
 
-import com.myorg.first.FirstApi;
-import com.myorg.first.Helper;
+import com.myorg.client.ClientApi;
+import com.myorg.client.Helper;
 import java.lang.reflect.Method;
 
 //import com.myorg.impl.HelperImpl; //Error: Cannot access com.myorg.impl.HelperImpl (compilation error)
@@ -11,13 +11,13 @@ class Application {
 
   public static void main(String args[]) throws Exception {
     System.out.println(new Application().getInfo());
-    System.out.println(new FirstApi().getInfo());
+    System.out.println(new ClientApi().getInfo());
 
 //    Helper h = new HelperImpl(); //Error: Cannot access com.myorg.impl.HelperImpl
 //    System.out.println(h);
 
     System.out.println("--- Accessing Helper class and its methods:");
-    Helper helper = new FirstApi().getHelper();
+    Helper helper = new ClientApi().getHelper();
     System.out.println(helper);
     System.out.println(helper.greet()); //works fine
 
@@ -27,4 +27,3 @@ class Application {
     System.out.println(method.invoke(helper)); //Error:  Java says "I'm watching you" (Runtime error)
   }
 }
-
