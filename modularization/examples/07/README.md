@@ -30,6 +30,21 @@
     ```
     ./custom-image/bin/java --list-modules
     ```
+* SDK image vs custom image:
+  * JDK java image: 
+    ```
+    java -version
+    ```
+    ```
+    du -sk ~/.sdkman/candidates/java/21.0.2-open  
+    ```
+  * Custom java image:
+    ```
+    ./custom-image/bin/java -version
+    ```
+    ```
+    du -sk custom-image
+    ```
 * Run application (functionally there is no differences between JDK java image and custom java image):
   * Using JDK java image: 
       ```
