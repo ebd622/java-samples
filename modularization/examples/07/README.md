@@ -33,16 +33,16 @@
 * Run application (functionally there is no differences between JDK java image and custom java image):
   * Using JDK java image: 
       ```
-      java -p output/mlib -m com.myorg.theClient/com.myorg.client.ClientApp
+      java -p output/mlib -m com.myorg.theApp/com.myorg.app.Application 
       ```
   * Using Custom java image:
       ```
-      custom-image/bin/java -p output/mlib -m com.myorg.theClient/com.myorg.client.ClientApp 
+      custom-image/bin/java -p output/mlib -m com.myorg.theApp/com.myorg.app.Application 
       ```
 * Run application to get some details of runtime performance:
   * Using JDK java image:
       ```
-      /usr/bin/time -l java -p output/mlib -m com.myorg.theClient/com.myorg.client.ClientApp
+      /usr/bin/time -l java -p output/mlib -m com.myorg.theApp/com.myorg.app.Application
       ```
     
       ```
@@ -54,28 +54,28 @@
     ---Accessing secret() method via reflection
     public java.lang.String com.myorg.impl.HelperImpl.secret()
     se...t
-        0.30 real         0.07 user         0.02 sys
-            47955968  maximum resident set size
+           0.13 real         0.05 user         0.03 sys
+            47611904  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-                3827  page reclaims
-                 238  page faults
+                2356  page reclaims
+                1695  page faults
                    0  swaps
                    0  block input operations
                    0  block output operations
                    0  messages sent
                    0  messages received
                    0  signals received
-                   4  voluntary context switches
-                 449  involuntary context switches
-           476369128  instructions retired
-           225790024  cycles elapsed
-            27362096  peak memory footprint
+                  15  voluntary context switches
+                 796  involuntary context switches
+           516126489  instructions retired
+           254151493  cycles elapsed
+            27067280  peak memory footprint    
       ```
   * Using Custom java image:
       ```
-      /usr/bin/time -l custom-image/bin/java -p output/mlib -m com.myorg.theClient/com.myorg.client.ClientApp 
+      /usr/bin/time -l custom-image/bin/java -p output/mlib -m com.myorg.theApp/com.myorg.app.Application 
       ```
       ```
     This is ClientApp, it is a part of module com.myorg.theClient
@@ -85,13 +85,13 @@
     Hello from HelperImpl
     ---Accessing secret() method via reflection
     public java.lang.String com.myorg.impl.HelperImpl.secret()
-    se...t
-        0.09 real         0.07 user         0.01 sys
-            39714816  maximum resident set size
+    se...t 
+            0.08 real         0.06 user         0.01 sys
+            39796736  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-                2809  page reclaims
+                2815  page reclaims
                    0  page faults
                    0  swaps
                    0  block input operations
@@ -100,8 +100,9 @@
                    0  messages received
                    0  signals received
                    0  voluntary context switches
-                 348  involuntary context switches
-           540865277  instructions retired
-           237488481  cycles elapsed
-            21725976  peak memory footprint
+                 323  involuntary context switches
+           536785409  instructions retired
+           227064807  cycles elapsed
+            21824304  peak memory footprint
+
       ```

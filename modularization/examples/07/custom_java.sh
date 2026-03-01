@@ -5,7 +5,7 @@
 
 jlink \
    --module-path "output/mlib" \
-   --add-modules java.base,com.myorg.theClient,com.myorg.theFirstAPI \
+   --add-modules java.base,com.myorg.theApp,com.myorg.theClientAPI \
    --output custom-image
 
 echo "Custom Java Runtime Image created in 'custom-image' directory."
