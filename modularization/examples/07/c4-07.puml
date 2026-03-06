@@ -6,15 +6,15 @@
 ' Use straight lines for all connections
 skinparam linetype ortho
 
-rectangle "module theClient (client.jar)" as theClientModule {
-    package "com.myorg.client" as client{
-        RECTANGLE ClientApp
+rectangle "module theApp (app.jar)" as theAppModule {
+    package "com.myorg.app" as app{
+        RECTANGLE Application
     }
 }
 
-rectangle "module theFirstAPI (first.jar)" as theFirstApiModule {
-    package "com.myorg.first" as first {
-        RECTANGLE FirstAPI
+rectangle "module theClientAPI (client.jar)" as theClientApiModule {
+    package "com.myorg.client" as client {
+        RECTANGLE ClientAPI
         INTERFACE Helper
     }
     package "com.myorg.impl" as impl {
@@ -23,19 +23,19 @@ rectangle "module theFirstAPI (first.jar)" as theFirstApiModule {
 }
 
 ' Indicate module dependency
-' Use a dashed arrow to show that theClient requires theFirstAPI
+' Use a dashed arrow to show that theApp requires theClientAPI
 
-theClientModule .> theFirstApiModule : requires
+theAppModule .> theClientApiModule : requires
 
-note right of first
-  exports com.myorg.first
+note right of client
+  exports com.myorg.client
 end note
 note top of impl
   opens com.myorg.impl
 end note
 
-ClientApp --> FirstAPI : calls
-ClientApp ---> HelperImpl : uses
+Application --> ClientAPI : calls
+Application ---> HelperImpl : uses
 HelperImpl ..|> Helper : implements
 
 ' Add free text at the bottom of the diagram
