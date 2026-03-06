@@ -6,13 +6,13 @@
 ' Use straight lines for all connections
 skinparam linetype ortho
 
-rectangle "module theApp" as theAppModule {
+rectangle "module theApp (app.jar)" as theAppModule {
     package "com.myorg.app" as app{
         RECTANGLE Application
     }
 }
 
-rectangle "module theClientAPI" as theClientApiModule {
+rectangle "module theClientAPI (client.jar)" as theClientApiModule {
     package "com.myorg.client" as client {
         RECTANGLE ClientAPI
         INTERFACE Helper
