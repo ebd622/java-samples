@@ -6,7 +6,7 @@
 ' Use straight lines for all connections
 skinparam linetype ortho
 
-rectangle "module theClient" as theClientModule {
+rectangle "module theApp" as theAppModule {
     package "com.myorg.app" as app{
         RECTANGLE Application
     }
@@ -23,9 +23,9 @@ rectangle "module theClientAPI" as theClientApiModule {
 }
 
 ' Indicate module dependency
-' Use a dashed arrow to show that theClient requires theClientAPI
+' Use a dashed arrow to show that theApp requires theClientAPI
 
-theClientModule ..> theClientApiModule : requires
+theAppModule ..> theClientApiModule : requires
 
 note right of client
   exports com.myorg.client
