@@ -2,15 +2,15 @@
 ### Run jars using module path
 * Use module path to run jars as automatic modules:
   ```shell
-  java -p output/mlib -m client/com.myorg.client.ClientApp
+  java -p output/mlib -m app/com.myorg.app.Application
   ```
 * `-p output/mlib`: Sets the module path to the output/mlib directory, where modular JARs are located.
-* `-m client/com.myorg.client.ClientApp`: Runs the main class com.myorg.client.ClientApp from the client module.
+* `-m app/com.myorg.app.Application`: Runs the main class com.myorg.client.ClientApp from the client module.
 
 ### Get details about the modules
 * To see details about the modules in the module path, use:
   ```shell
-  jar -f output/mlib/client.jar -d
+  jar -f output/mlib/app.jar -d
   ```
 * `-d` option displays the module descriptor information from the specified JAR file.
 * This will show the module name, dependencies, and other module-related information for the client module
