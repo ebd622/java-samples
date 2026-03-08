@@ -13,6 +13,10 @@
   https://docs.oracle.com/en/java/javase/25/docs/api/index.html
   ```
   * You can see the list of modules and their packages with `directives`
-## Run code  
+## Run code
+* Check jar structure:
+  ```
+  jar tf output/mlib/app.jar
+  ```
 * Works fine with classpath
 * JARs are included into classpath
