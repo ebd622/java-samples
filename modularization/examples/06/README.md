@@ -1,19 +1,19 @@
 # Hidden vs Exposed
 
-* Module `theFirstAPI` **exposes** its package `com.myorg.first`, but does not **expose** `com.myorg.impl`
+* Module `theClientAPI` **exposes** its package `com.myorg.client`, but does not **expose** `com.myorg.impl`
     ```
-    module com.myorg.theFirstAPI {
-        exports com.myorg.first;
+    module com.myorg.theClientAPI {
+        exports com.myorg.client;
     }
     ```
   Package `com.myorg.impl` is **hidden** from other modules.
-* Module `theClient` requires Module `theFirstAPI`
+* Module `theApp` requires Module `theClientAPI`
     ```
-    module com.myorg.theClient {
-        requires com.myorg.theFirstAPI;
+    module com.myorg.theApp {
+        requires com.myorg.theClientAPI;
     }
     ```
-  * Class `ClientApp` in Module `theClient` can access public types in package `com.myorg.first`, but cannot access types in package `com.myorg.impl`
+  * Class `Application` in Module `theApp` can access public types in package `com.myorg.client`, but cannot access types in package `com.myorg.impl`
   * We cannot use `com.myorg.impl.HelperImpl` in `ClientApp`, because it is in a non-exported package:
     ```java
     // This will cause a compile-time error
@@ -22,14 +22,14 @@
     ```
     * So, implementation details are hidden from other modules, enforcing strong encapsulation.
     * This encapsulation helps maintain a clear separation between the public API (interface) and internal implementation, improving modular
-* Check metadata of `theFirstAPI` module:
+* Check metadata of `theClientAPI` module:
     ```
-    jar -f output/mlib/first.jar -d
+    jar -f output/mlib/client.jar -d
     ```
     * Output:
     ```
-    com.myorg.theFirstAPI jar:file:.../java-samples/modularization/examples/07/output/mlib/first.jar!/module-info.class
-    exports com.myorg.first
+    com.myorg.theClientAPI jar:file:.../java-samples/modularization/examples/07/output/mlib/client.jar!/module-info.class
+    exports com.myorg.client
     requires java.base mandated
     contains com.myorg.impl
     ```
