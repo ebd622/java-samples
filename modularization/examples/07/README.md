@@ -1,22 +1,22 @@
 # Opening for runtime while closing for compile time dependencies
 
-* Module `theFirstAPI` **exports** its package `com.myorg.first`, and **opens** `com.myorg.impl`
+* Module `theClientAPI` **exports** its package `com.myorg.client`, and **opens** `com.myorg.impl`
     ```
-    module com.myorg.theFirstAPI {
-        exports com.myorg.first;
+    module com.myorg.theClientAPI {
+        exports com.myorg.client;
         opens com.myorg.impl; // Let's Client to access it
     }
     ```
     * Package `com.myorg.impl` is now open for reflection at runtime.
     * But still hidden at compile time.
-* Check metadata of `theFirstAPI` module:
+* Check metadata of `theClientAPI` module:
     ```
     jar -f output/mlib/first.jar -d
     ```
     * Output:
     ```
-    com.myorg.theFirstAPI jar:file:.../java-samples/modularization/examples/07/output/mlib/first.jar!/module-info.class
-    exports com.myorg.first
+    com.myorg.theClientAPI jar:file:.../java-samples/modularization/examples/07/output/mlib/first.jar!/module-info.class
+    exports com.myorg.client
     requires java.base mandated
     opens com.myorg.impl
     ```
@@ -61,8 +61,8 @@
       ```
     
       ```
-    This is ClientApp, it is a part of module com.myorg.theClient
-    This is FirstApi, it is a part of module com.myorg.theFirstAPI
+    This is ClientApp, it is a part of module com.myorg.theApp
+    This is FirstApi, it is a part of module com.myorg.theClientAPI
     ---Accessing Helper class and its methods
     com.myorg.impl.HelperImpl@65b54208
     Hello from HelperImpl
@@ -93,8 +93,8 @@
       /usr/bin/time -l custom-image/bin/java -p output/mlib -m com.myorg.theApp/com.myorg.app.Application 
       ```
       ```
-    This is ClientApp, it is a part of module com.myorg.theClient
-    This is FirstApi, it is a part of module com.myorg.theFirstAPI
+    This is ClientApp, it is a part of module com.myorg.theApp
+    This is FirstApi, it is a part of module com.myorg.theClientAPI
     ---Accessing Helper class and its methods
     com.myorg.impl.HelperImpl@65b54208
     Hello from HelperImpl
