@@ -1,13 +1,13 @@
 # Hidden vs Exposed
 
-* Module `theClientAPI` **exposes** its package `com.myorg.client`, but does not **expose** `com.myorg.impl`
+* Module `com.myorg.theClientAPI` **exposes** its package `com.myorg.client`, but does not **expose** `com.myorg.impl`
     ```
     module com.myorg.theClientAPI {
         exports com.myorg.client;
     }
     ```
   Package `com.myorg.impl` is **hidden** from other modules.
-* Module `theApp` requires Module `theClientAPI`
+* Module `com.myorg.theApp` requires Module `com.myorg.theClientAPI`
     ```
     module com.myorg.theApp {
         requires com.myorg.theClientAPI;
@@ -22,7 +22,7 @@
     ```
     * So, implementation details are hidden from other modules, enforcing strong encapsulation.
     * This encapsulation helps maintain a clear separation between the public API (interface) and internal implementation, improving modular
-* Check metadata of `theClientAPI` module:
+* Check metadata of `com.myorg.theClientAPI` module:
     ```
     jar -f output/mlib/client.jar -d
     ```
