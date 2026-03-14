@@ -25,7 +25,7 @@ rectangle "module com.myorg.theClientAPI (client.jar)" as theClientApiModule {
 ' Indicate module dependency
 ' Use a dashed arrow to show that theApp requires theClientAPI
 
-theAppModule ..> theClientApiModule : requires
+theAppModule ...> theClientApiModule : requires
 
 note right of client
   exports com.myorg.client
