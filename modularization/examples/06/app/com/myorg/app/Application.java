@@ -21,9 +21,9 @@ class Application {
     System.out.println(helper);
     System.out.println(helper.greet()); //works fine
 
-    System.out.println("--- Accessing secret() method via reflection:");
-    Method method = helper.getClass().getMethod("secret");
-    System.out.println(method);
-    System.out.println(method.invoke(helper)); //Error:  Java says "I'm watching you" (Runtime error)
+//    System.out.println("--- Accessing secret() method via reflection:");
+//    Method method = helper.getClass().getMethod("secret");
+//    System.out.println(method);
+//    System.out.println(method.invoke(helper)); //Error:  Java says "I'm watching you" (Runtime error)
   }
 }
