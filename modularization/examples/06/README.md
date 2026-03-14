@@ -33,3 +33,6 @@
     requires java.base mandated
     contains com.myorg.impl
     ```
+## Summary
+* Modules can **expose** (export) packages to allow other modules to access their public types, while keeping other packages hidden.
+* This strong encapsulation helps maintain a clear separation between the public API and internal implementation, improving modularity and maintainability of the codebase.
