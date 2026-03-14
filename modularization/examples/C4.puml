@@ -3,9 +3,9 @@
 
 AddElementTag("microService", $shape=EightSidedShape(), $bgColor="CornflowerBlue", $fontColor="white", $legendText="micro service\neight sided")
 
-Container(clientApp, "ClientApp", "com.myorg.client", "Main application entry point")
-Container(firstApi, "FirstApi", "com.myorg.first", "Provides API functionality", $tags = "microService")
+Container(app, "App", "com.myorg.app", "Main application entry point")
+Container(clientAPI, "ClientAPI", "com.myorg.client", "Provides API functionality", $tags = "microService")
 
-Rel(clientApp, firstApi, "Calls getInfo()")
+Rel(app, clientAPI, "Calls getInfo()")
 
 @enduml
