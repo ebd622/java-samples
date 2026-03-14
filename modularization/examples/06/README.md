@@ -13,7 +13,7 @@
         requires com.myorg.theClientAPI;
     }
     ```
-  * Class `Application` in Module `theApp` can access public types in package `com.myorg.client`, but cannot access types in package `com.myorg.impl`
+  * Class `Application` in Module `com.myorg.theApp` can access public types in package `com.myorg.client`, but cannot access types in package `com.myorg.impl`
   * We cannot use `com.myorg.impl.HelperImpl` in `ClientApp`, because it is in a non-exported package:
     ```java
     // This will cause a compile-time error
