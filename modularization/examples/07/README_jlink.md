@@ -1,5 +1,15 @@
 # Build custom java image with jlink
-* List modules
+## Use jlink tool:
+```
+jlink --module-path "output/mlib" \
+      --add-modules java.base,com.myorg.theApp,com.myorg.theClientAPI \
+      --output custom-image
+```
+Custom java image will be created in `custom-image` directory. 
+It will contain only the modules specified in `--add-modules` option and their dependencies. It will not contain any other modules that are not required by the application. This results in a smaller image size and faster startup time compared to using a full JDK image.
+
+## Compare full JDK image with custom java image
+### List modules
   * JDK java image: 
     ```
     java --list-modules
@@ -8,7 +18,7 @@
     ```
     ./custom-image/bin/java --list-modules
     ```
-* SDK image vs custom image:
+### SDK image vs custom image:
   * JDK java image: 
     ```
     java -version
@@ -23,7 +33,7 @@
     ```
     du -sk custom-image
     ```
-* Run application (functionally there is no differences between JDK java image and custom java image):
+### Run application (functionally there is no differences between JDK java image and custom java image):
   * Using JDK java image: 
       ```
       java -p output/mlib -m com.myorg.theApp/com.myorg.app.Application 
@@ -32,7 +42,7 @@
       ```
       custom-image/bin/java -p output/mlib -m com.myorg.theApp/com.myorg.app.Application 
       ```
-* Run application to get some details of runtime performance:
+### Run application to get details of runtime performance:
   * Using JDK java image:
       ```
       /usr/bin/time -l java -p output/mlib -m com.myorg.theApp/com.myorg.app.Application
@@ -99,3 +109,8 @@
             21824304  peak memory footprint
 
       ```
+
+## Summary:
+  * Custom java image is created using jlink tool which allows us to create a custom runtime image that contains only the modules required by the application.
+  * Custom java image is smaller in size compared to full JDK image because it does not contain any unnecessary modules.
+  * Custom java image has faster startup time compared to full JDK image because it does not have to load unnecessary modules at runtime.
