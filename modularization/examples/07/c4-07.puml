@@ -14,11 +14,18 @@ rectangle "module com.myorg.theApp (app.jar)" as theAppModule {
 
 rectangle "module com.myorg.theClientAPI (client.jar)" as theClientApiModule {
     package "com.myorg.client" as client {
-        RECTANGLE ClientAPI
-        INTERFACE Helper
+        RECTANGLE ClientAPI {
+            +getHelper(): Helper
+        }
+        INTERFACE Helper {
+            +greet(): void
+        }
     }
     package "com.myorg.impl" as impl {
-        RECTANGLE HelperImpl
+        RECTANGLE HelperImpl {
+            +greet(): void
+            +secret(): void
+        }
     }
 }
 
@@ -34,8 +41,8 @@ note top of impl
   opens com.myorg.impl
 end note
 
-Application --> ClientAPI : calls
-Application ---> HelperImpl : uses
+Application ----> ClientAPI : calls
+Application -> Helper : uses
 HelperImpl ..|> Helper : implements
 
 ' Add free text at the bottom of the diagram
