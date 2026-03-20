@@ -10,7 +10,7 @@
   ```
 * Mudules in javadoc:  
   ```
-  https://docs.oracle.com/en/java/javase/25/docs/api/index.html
+  https://docs.oracle.com/en/java/javase/21/docs/api/index.html
   ```
   * You can see the list of modules and their packages with `directives`
 ## Run code
