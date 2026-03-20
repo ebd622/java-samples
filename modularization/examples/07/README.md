@@ -24,4 +24,4 @@
 ## Summary
 * By using `opens` directive, we can allow other modules to access non-exported packages at runtime via reflection, while keeping them hidden at compile time.
 * This allows us to maintain strong encapsulation of our module's internal implementation, while still providing flexibility for runtime access when needed.
-* This is particularly useful for frameworks and libraries that rely on reflection to access internal details of other modules, without exposing those details at compile time.
+* This is useful for frameworks and libraries that rely on reflection to access internal details of other modules, without exposing those details at compile time.

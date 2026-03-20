@@ -35,4 +35,5 @@
     ```
 ## Summary
 * Modules can **expose** (export) packages to allow other modules to access their public types, while keeping other packages hidden.
-* This strong encapsulation helps maintain a clear separation between the public API and internal implementation, improving modularity and maintainability of the codebase.
+* Such implementation is a key feature of the Java Module System, enabling strong encapsulation and better modularity.
+* This strong encapsulation helps maintain a clear separation between the public API and internal implementation, improving maintainability of the codebase.
