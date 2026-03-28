@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
 //import com.myorg.impl.HelperImpl; //ERROR at compile time even though it is available now for runtime
 
 class Application {
-  public String getInfo() { return "This is Application, it is a part of " + Application.class.getModule(); }
+  public String getInfo() { return "This is Application, it is a part of: " + Application.class.getModule(); }
 
   public static void main(String args[]) throws Exception {
     System.out.println(new Application().getInfo());
