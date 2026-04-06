@@ -4,6 +4,7 @@
   Application.class.getModule()
   ClientApi.class.getModule()
   ```
+  `getModule()` returns the module that this class or interface is a member of
 * Output:
   ```
   --- All code running from the classpath belong to the one [unnamed module] ---
