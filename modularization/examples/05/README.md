@@ -2,6 +2,9 @@
 
 * When running the application with the `classpath` Java tries to load 
 classes directly from the JARs listed in the classpath. 
+  ```shell
+  java -classpath output/mlib/client.jar:output/mlib/app.jar com.myorg.app.Application
+  ```
   
   If a required class is missing, you get a ClassNotFoundException or NoClassDefFoundError `at runtime after the application starts`.
 * When running the application with the `module path`, Java’s module system checks for all required modules `before starting`.
