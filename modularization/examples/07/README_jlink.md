@@ -24,8 +24,12 @@ It will contain only the modules specified in `--add-modules` option and their d
     java -version
     ```
     ```
-    du -sk ~/.sdkman/candidates/java/21.0.2-open  
+    du -sk ~/.sdkman/candidates/java/21.0.2-open 
     ```
+    ```
+    du -sk ~/.sdkman/candidates/java/25.0.2-open  
+    ```
+    
   * Custom java image:
     ```
     ./custom-image/bin/java -version
