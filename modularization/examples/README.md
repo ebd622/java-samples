@@ -48,7 +48,7 @@
   java -p output/mlib -m app/com.myorg.app.Application
   ```
 * `-p output/mlib`: Sets the module path to the output/mlib directory, where modular JARs are located.
-* `-m app/com.myorg.app.Application`: Runs the main class com.myorg.client.ClientApp from the client module.
+* `-m app/com.myorg.app.Application`: Runs the main class in com.myorg.app.Application.
 
 ### Get details about the modules
 * To see details about the modules in the module path, use:
